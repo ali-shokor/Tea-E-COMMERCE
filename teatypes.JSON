@@ -1,0 +1,449 @@
+{
+    "GREEN TEA": [
+      {
+        "id": 1,
+        "name": "CINNAMON ORANGE GREEN TEA",
+        "price": "15.00 $",
+        "description": "An energizing blend based around the eternally uplifting flavors of cinnamon and orange. (100 grams makes 65 mugs)",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Premium sencha green tea, orange peel, mallow blossoms, safflowers, sunflower petals and cinnamon",
+        "benefits": [
+          "aids in weight loss",
+          "boosts antioxidants level",
+          "balances cholesterol",
+          "prevents diabetes"
+        ],
+        "image": "<img src=\"static/CinnamonOrange.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 2,
+        "name": "TURMERIC MATCHA",
+        "price": "15.00 $",
+        "description": "Whether you’re trying to lose weight or just enjoy the naturally wholesome flavors, allow this tea to become the cherry on top for your healthy journey.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Matcha, turmeric, ginger, lemongrass, liquorice roots, orange peel and lemon peel.",
+        "benefits": [
+          "boosts energy level",
+          "detoxifies the body",
+          "aids in weight loss",
+          "boosts immunity",
+          "prevents arthritis and rheumatism",
+          "boosts brain function"
+        ],
+        "image": "<img src=\"static/Turmeric_Matcha.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 3,
+        "name": "EARL GREY GREEN TEA",
+        "price": "15.00 $",
+        "description": "A beautiful balance of flavors, giving a rich, deep-amber infusion perfumed with exotic bergamot. It’s a tea that soothes and uplifts with every sip.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Earl grey, green tea, rare rose petals and a touch of bergamot.",
+        "benefits": [
+          "eases anxiety",
+          "soothes sore throat",
+          "boosts metabolism",
+          "aids digestion"
+        ],
+        "image": "<img src=\"static/EarlGreyGreen.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 4,
+        "name": "GINGER PINEAPPLE GREEN TEA",
+        "price": "15.00 $",
+        "description": "Discover big authentic flavors in this blend, using only 100% natural certified organic ingredients.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Green tea, ginger and pineapple.",
+        "benefits": [
+          "boosts immunity",
+          "prevents water retention",
+          "aids in weight loss",
+          "promotes a healthy skin"
+        ],
+        "image": "<img src=\"static/GingerPineApple.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 5,
+        "name": "VITALITEA’L GREEN TEA",
+        "price": "15.00 $",
+        "description": "For green tea lovers looking for a bolder brew, we bring you an exotic twist that delights the nose as well as the palate.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Sencha green tea, ginseng roots, pineapple and ginger roots.",
+        "benefits": [
+          "boosts immunity",
+          "aids in weight loss",
+          "maintains joint health",
+          "improves focus"
+        ],
+        "image": "<img src=\"static/Vitality.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 6,
+        "name": "MATCHA BERRIES",
+        "price": "15.00 $",
+        "description": "Who says that having a sweet tooth is such a bad thing? We’ve incorporated the natural, pure taste of green tea with flavorful wild berries that will please any sweet-loving palate.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Green tea sencha, ginger, dried apples, dried beetroot, liquorice root, elderberries, Japanese green tea matcha and raspberry pieces.",
+        "benefits": [
+          "boosts brain function",
+          "helps fight inflammation",
+          "helps manage diabetes",
+          "boosts heart health",
+          "prevents cancer"
+        ],
+        "image": "<img src=\"static/Matcha_Berries.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      }
+    ],
+  
+    "BLACK TEA": [
+      {
+        "id": 7,
+        "name": "BLACK CURRANT SENCHA BLACK TEA",
+        "price": "15.00 $",
+        "description": "An organic exquisite fruity blend of black and green tea originating all the way from Europe to leave you awakened and refreshed.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "black tea, sencha green tea, papaya pieces, currant, sunflower petals, rose petals and mellow blossoms.",
+        "benefits": [
+          "boosts metabolism",
+          "soothes sore throats",
+          "boosts energy",
+          "boosts heart health",
+          "improves digestion"
+        ],
+        "image": "<img src=\"static/BlackCurrentGreen.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      },
+      {
+        "id": 8,
+        "name": "BLUE FLOWER EARL GREY BLACK TEA",
+        "price": "15.00 $",
+        "description": "A rich hand-crafted blend with a slightly citrusy and floral taste. It’s a classic breakfast tea!",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Blue cornflowers, bergamot, earl grey.",
+        "benefits": [
+          "fights anxiety",
+          "fights inflammation",
+          "improves digestion",
+          "improves focus"
+        ],
+        "image": "<img src=\"static/BlueFlower.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      },
+      {
+        "id": 9,
+        "name": "VANILLA CLASSIC BLACK TEA",
+        "price": "15.00 $",
+        "description": "Cherish the world over a simple comforting and soothing brew!",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Vanilla, black tea.",
+        "benefits": [
+          "boosts heart health",
+          "aids weight loss",
+          "revitalizes the energy",
+          "improves focus"
+        ],
+        "image": "<img src=\"static/VANILLA-CLASSIC.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      },
+      {
+        "id": 10,
+        "name": "FINEST GOLDEN TIPS PREMIUM BLACK TEA",
+        "price": "30.00 $",
+        "description": "A rare and memorable tea experience worth savoring! This fine tea is a premium specialty black tea for the connoisseur.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Golden tips",
+        "benefits": [
+          "boosts heart health",
+          "improves focus",
+          "cures ingestion",
+          "reduces the rate of cholesterol"
+        ],
+        "image": "<img src=\"static/Golden.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      }
+    ],
+  
+    "WHITE TEA": [
+      {
+        "id": 11,
+        "name": "SILVER NEEDLE WHITE TEA",
+        "price": "30.00 $",
+        "description": "Discover one of the most exclusive teas around the world! This premium grade classic white tea consists only of the first flush spring buds of the tea plant. It is also known for its delicious sweet flavor.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse for 4 minutes. Remove leaves and enjoy.",
+        "ingredients": "Yin Zhen, also known as 'Silver Needles'.",
+        "benefits": [
+          "balances blood glucose levels",
+          "boosts heart health",
+          "boosts metabolism",
+          "balances level of cholesterol"
+        ],
+        "image": "<img src=\"static/Silver_needle.png\">",
+        "rating":2.5 ,
+        "category": "WHITE TEA"
+      },
+      {
+        "id": 12,
+        "name": "WHITE SILK WHITE TEA",
+        "price": "15.00 $",
+        "description": "A delicate white tea with a special fruity twist that serves as perfect refreshment!",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "White tea, lemon myrtle, ginger, and raspberries.",
+        "benefits": [
+          "boosts energy",
+          "aids weight loss",
+          "aids in digestion",
+          "reduces inflammation"
+        ],
+        "image": "<img src=\"static/White_Silk.png\">",
+       "rating":2.5 ,
+        "category": "WHITE TEA"
+      },
+      {
+        "id": 13,
+        "name": "WHITE WINGS WHITE TEA",
+        "price": "18.00 $",
+        "description": "Smooth, delicate and highly refreshing, this fine white tea yields a light golden colored cup full of flavors.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "White blossoms, raw buds.",
+        "benefits": [
+          "balances blood glucose levels",
+          "boosts heart health",
+          "boosts metabolism",
+          "balances level of cholesterol"
+        ],
+        "image": "<img src=\"static/White_Wing.png\">",
+        "rating":2.5 ,
+        "category": "WHITE TEA"
+      }
+    ],
+  
+    "FRUIT BLENDS": [
+      {
+        "id": 14,
+        "name": "MIXED BERRIES FRUIT BLEND",
+        "price": "15.00 $",
+        "description": "An intensely fruity blend that will revitalize your spirits from the first sip to the last. Sweet, tangy and energizing, with a lovely sunny aroma, it’s the perfect caffeine-free infusion.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Apple pieces, hibiscus petals, elderberries, sweet blackberry leaves, rosehip shells, strawberry slices, blackberries, raspberries and blueberries.",
+        "benefits": [
+          "helps fight inflammation",
+          "helps manage diabetes",
+          "boosts heart health",
+          "prevents cancer",
+          "boosts antioxidant levels"
+        ],
+        "image": "<img src=\"static/mixed-berries.png\">",
+        "rating":2.5 ,
+        "category": "FRUIT BLENDS"
+      }
+    ],
+  
+    "MATCHA BLENDS": [
+      {
+        "id": 15,
+        "name": "ORGANIC MATCHA PREMIUM JAPANESE GREEN TEA",
+        "price": "38.00 $",
+        "description": "Japanese matcha, Ceremonial Grade, Certified organic by Lacon GmbH. Matcha is the most exclusive tea in the world. Matcha is finely ground powder of green tea leaves that have been shaded for a considerable period of time before harvest. The tea is made solely of the rare and high-class tencha tea leaves.",
+        "how_to_prepare": "Pour 80°C water over 2 grams of tea leaves powder per cup and stir to dissolve. Enjoy!",
+        "ingredients": "Matcha",
+        "benefits": ["Matcha has high amounts of antioxidants, amino acids, minerals, and countless micronutrients, that interact with free radicals and thereby show positive effects on the body and the skin.",
+        " It’s cognitive power lies in good natural source of antioxidant",
+        "Matcha is rich with Vitamin A as well as L-Theanine, which in combination with caffeine, promotes focused alertness.",
+        " Calm energy concentration that lasts much longer than with coffee."],
+        "image": "<img src=\"static/MATCHA.png\" >",
+        "rating":2.5 ,
+        "category": "MATCHA BLENDS"
+      },
+      {
+        "id": 16,
+        "name": "TURMERIC MATCHA",
+        "price": "15.00 $",
+        "description": "Whether you’re trying to lose weight or just enjoy the naturally wholesome flavors, allow this tea to become the cherry on top for your healthy journey.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Matcha, turmeric, ginger, lemongrass, liquorice roots, orange peel and lemon peel.",
+        "benefits": [
+          "boosts energy level",
+          "detoxifies the body",
+          "aids in weight loss",
+          "boosts immunity",
+          "prevents arthritis and rheumatism",
+          "boosts brain function"
+        ],
+        "image": "<img src=\"static/Turmeric_Matcha.png\" >",
+        "rating":2.5 ,
+        "category": "MATCHA BLENDS"
+      }
+    ],
+  
+    "HERBAL TEA": [
+      {
+        "id": 17,
+        "name": "BALANCE HERBAL INFUSION",
+        "price": "15.00 $",
+        "description": "Exuding finesse and delightful flavors, this mellow blend adds depth and richness to your days.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Fennel, hibiscus, lavender, lemongrass, aniseeds.",
+        "benefits": [
+          "treats bloating",
+          "improves digestion",
+          "reduces blood pressure",
+          "improves sleep quality",
+          "balances levels cholesterol in the blood",
+          "detoxifies the body"
+        ],
+        "image": "<img src=\"static/HerbalBalance.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      },
+      {
+        "id": 18,
+        "name": "ESCAPE TO NATURE HERBAL INFUSION",
+        "price": "15.00 $",
+        "description": "An intensely aromatic herbal blend will spark up your taste buds and take you on a bold journey.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Juniper berries, fennel, lemon verbena, nettle leaves, rosemary, basil, heather blossoms, lavender, sandal wood, sunflower petals.",
+        "benefits": [
+          "fights water retention",
+          "boosts metabolism",
+          "soothes urinary tract infections",
+          "flushes out toxins",
+          "boosts immune system",
+          "improves digestion"
+        ],
+        "image": "<img src=\"static/Escape.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      },
+      {
+        "id": 19,
+        "name": "SIMPLY TEA TOX HERBAL INFUSION",
+        "price": "12.00 $",
+        "description": "Enjoy this luxurious rejuvenating detox herbal infusion sourced from the heart of Europe.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Rosemary, nettle leaves, rosehip shells, rooibos, lavender, ginger, mate, puerh tea, fennel, liquorice roots, cinnamon, black pepper, cardamom pods, clove buds.",
+        "benefits": [
+          "protects the brain from aging",
+          "boosts metabolic rate",
+          "prevents fat accumulation",
+          "detoxifies the body"
+        ],
+        "image": "<img src=\"static/Simply_1.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      },
+      {
+        "id": 20,
+        "name": "WELL BEING HERBAL INFUSION",
+        "price": "15.00 $",
+        "description": "A caffeine-free wellness blend that will revive your senses and soothe your body.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "lemon verbena, aniseed, fennel, sweet orange peel, liquorice roots, peppermint, spearmint, and chamomile.",
+        "benefits": [
+          "treats bloating",
+          "regulates appetite",
+          "reduces cholesterol levels",
+          "alleviates cramps",
+          "reduces nausea"
+        ],
+        "image": "<img src=\"static/Wellbeing.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      }
+    ],
+  
+  
+    "ROOIBOS & HONEY BUSH": [
+      {
+        "id": 21,
+        "name": "HONEY BUSH",
+        "price": "15.00 $",
+        "description": "Treat yourself to a true taste of the pure honey bush from the southeastern part of South Africa! It is delicately harvested to bring you a fine fruity and honey cup of tea.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Honey bush",
+        "benefits": [
+          "strengthens immunity",
+          "accelerates metabolism",
+          "relaxes the body",
+          "helps treat menopause symptoms"
+        ],
+        "image": "<img src=\"static/HoneyBush.png\" >",
+        "rating":2.5 ,
+        "category": "ROOIBOS & HONEY BUSH"
+      },
+      {
+        "id": 22,
+        "name": "ROOIBOS BLOSSOM",
+        "price": "15.00 $",
+        "description": "We’ve created the perfect partnership of soothing South African rooibos and florals. It’s a wonderfully warming infusion that helps you to both relax and rejuvenate.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Rooibos, sunflower petals, cornflower petals, rose petals.",
+        "benefits": [
+          "boosts antioxidant levels",
+          "improves blood circulation",
+          "supports healthy skin",
+          "aids in weight loss",
+          "rich in magnesium and iron"
+        ],
+        "image": "<img src=\"static/Blossom.png\" >",
+        "rating":2.5 ,
+        "category": "ROOIBOS & HONEY BUSH"
+      },
+      {
+        "id": 23,
+        "name": "SPICY ROOIBOS",
+        "price": "15.00 $",
+        "description": "A bold and satisfying brew perfect for adding some spice to your life! It’s a blend full of character in every cup.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Rooibos, cinnamon, pink pepper, bourbon vanilla beans, clove buds and cardamom.",
+        "benefits": [
+          "boosts antioxidant levels",
+          "balances blood glucose levels",
+          "supports healthy skin",
+          "aids in weight loss",
+          "aids in digestion",
+          "rich in magnesium and iron"
+        ],
+        "image": "<img src=\"static/SpicyRooibois.png\" >",
+        "rating":2.5 ,
+        "category": "ROOIBOS & HONEY BUSH"
+      }
+    ],
+  
+    "PREMIUM OOLONG": [
+      {
+        "id": 24,
+        "name": "ROYAL ORCHID PREMIUM OOLONG TEA",
+        "price": "30.00 $",
+        "description": "Anyone who enjoys a sophisticated cup of tea will appreciate the finesse of our Royal Orchid tea.",
+        "how_to_prepare": "Pour 90 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Premium Oolong Tea",
+        "benefits": [
+          "improves focus",
+          "cleanses the body",
+          "increases fat oxidation",
+          "boosts heart health",
+          "helps manage stress"
+        ],
+        "image": "<img src=\"static/Royal_Orchid.png\" >",
+        "rating":2.5 ,
+        "category": "PREMIUM OOLONG"
+      }
+    ]
+  
+  }
