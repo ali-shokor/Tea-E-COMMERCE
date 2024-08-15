@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Item Details</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="category_view.css">
+        <link rel="stylesheet" href="item_view.css">
+        <link rel="icon" type="image/png" href="static/tea8.png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-container">
+                        <div class="logo-box">
+                            <div class="logo"></div>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <!-- <li class="nav-links">
+                        <a href="cart.html">Cart</a>
+                    </li> -->
+                    <li class="search-container">
+                        <input type="search" autofocus aria-label="Search" class="search-input"  placeholder="Search Your Product...">
+                    </li>
+                    <li class="right-nav">
+                        <a href="cart.html">
+                            <div class="cart-box">
+                                <div class="cart"></div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="profile-box">
+                               <div class="profile-pic"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <div class="big-box">
+    <div class="description-container-box">
+        <h1 class="category-name">White Tea name</h1>
+        <div class="description-container">
+            <div class="flex-column image-container">
+                <div class="image-box">
+                    <img src="static/Sencha_Matcha.png" alt="test">
+                </div>
+                <i class="price">15$</i>
+                <div id="ratingContainer" class="stars teaRating">
+                    <div class="star1">★</div>
+                    <div class="star2">★</div>
+                    <div class="star3">★</div>
+                    <div class="star4">★</div>
+                    <div class="star5">★</div>
+                </div>
+                
+                
+            </div>
+            <div class="flex-column description-text">
+                <div class="description"> <h2>Descritption:</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere eum omnis repudiandae, labore reiciendis aliquam quam et fuga nulla cupiditate voluptatibus quaerat sequi minima similique ex. Quas, debitis velit.</span></div>
+                <div class="prepare"><h2>How To Prepare:</h2><span> made solely of the rare and high-class tencha tea leaves."</span></div>
+                <div class="benifits"><h2>Beninfits:</h2><span>
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+            </span></div>
+            </div>
+        </div>
+
+        <div class="adding-items">
+            <div class="quantity-input">
+                <label class="quantity" for="quantity">QUANTITY:</label>
+                <input type="number" name="quantity" id="quantity" max="10" min="1" value="1">
+                <button id="addToCartBtn" class="button-cart">ADD TO CART</button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container1">
+            <div class="socail">
+                <ul class="social-icons">
+                    <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Refunds & Replacement</a></li>
+                    <li><a href="#">About Tea House </a></li>
+                </ul>
+            </div>
+            <div class="more-info">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i>First Branch Location</li>
+                    <li><i class="fa fa-map-marker"></i>Second Branch Location</li>
+                    <li><i class="fa fa-phone"></i> 00961 78 957416</li>
+                    <li><i class="fa fa-envelope"></i> alishokermana@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Shipping All Over Lebanon</li>
+                    <li>Delivery within two working days.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright Tea & Tonic | by Ali Shokor</p>
+        </div>
+
+    </footer>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Clear the content of specific containers before populating them
+            document.querySelector('.category-name').textContent = '';
+            document.querySelector('.price').textContent = '';
+            document.querySelector('.description span').textContent = '';
+            document.querySelector('.prepare span').textContent = '';
+            document.querySelector('.image-box').innerHTML = ''; // Clear the image container
+            document.querySelector('.benifits ul').innerHTML = '';
+            const tea = JSON.parse(localStorage.getItem('selectedTea'));
+
+           
+            fetch('./teatypes.JSON')
+                .then(response => response.json())
+                .then(sampleData => {
+                    const tea = JSON.parse(localStorage.getItem('selectedTea'));
+        
+                    if (tea) {
+                        /*if (tea.rating == 1) {
+                            document.querySelector('.star1').classList.add = 'selector'
+                        }*/
+                        document.querySelector('.category-name').textContent = tea.name;
+                        document.querySelector('.price').textContent = `${tea.price}`;
+                        document.querySelector('.description span').textContent = tea.description;
+                        document.querySelector('.prepare span').textContent = tea.how_to_prepare;
+                        
+                        // Populate benefits list
+                        const teaBenefits = document.querySelector('.benifits ul');
+                        tea.benefits.forEach(benefit => {
+                            const li = document.createElement('li');
+                            li.textContent = benefit;
+                            teaBenefits.appendChild(li);
+                        });
+
+                        // Populate main image
+                      
+                        const teaImageContainer = document.querySelector('.image-box');
+                        teaImageContainer.innerHTML = tea.image;
+                        document.querySelector('image-box img').alt = tea.name
+                    }
+                });
+                
+
+                const stars = document.querySelectorAll('.teaRating');
+                const star1 = document.querySelector('star1')
+                const star2 = document.querySelector('star2')
+                const star3 = document.querySelector('star3')
+                const star4 = document.querySelector('star4')
+                const star5 = document.querySelector('star5')
+                // Function to handle the star selection
+                function handleStarClick(selectedClass) {
+
+                    document.querySelector('.star1').classList.remove('selected')
+                    document.querySelector('.star2').classList.remove('selected')
+                    document.querySelector('.star3').classList.remove('selected')
+                    document.querySelector('.star4').classList.remove('selected')
+                    document.querySelector('.star5').classList.remove('selected')
+
+                    if (selectedClass == 'star1') {
+                        document.querySelector('.star1').classList.add('selected')
+                        tea.rating = 1
+                        localStorage.setItem('selectedTea', JSON.stringify(tea));
+                        
+                        localStorage.setItem('selectedTea', JSON.stringify(tea));
+                        updateStarSelection(rating);
+                    }
+                    else if (selectedClass == 'star2') {
+                        for (let i = 1; i <= 2 ; i++) {
+                            document.querySelector(`.star${i}`).classList.add('selected')
+                            }
+                        tea.rating = 2
+                    }
+                    else if (selectedClass == 'star3') {
+                        for (let i = 1; i <= 3 ; i++) {
+                            document.querySelector(`.star${i}`).classList.add('selected')
+                            }
+                        tea.rating = 3
+                    }
+                    else if (selectedClass == 'star4') {
+                        for (let i = 1; i <= 4 ; i++) {
+                            document.querySelector(`.star${i}`).classList.add('selected')
+                            }
+                        tea.rating = 4
+                    }
+                    else if (selectedClass == 'star5') {
+                        for (let i = 1; i <= 5 ; i++) {
+                        document.querySelector(`.star${i}`).classList.add('selected')
+                        }
+                        tea.rating = 5
+                    }
+                    
+                }
+                
+                // Add event listeners to each star
+                stars.forEach((star) => {
+                    star.addEventListener('click', (e) => {
+                        const classStarName = e.target.classList
+                        handleStarClick(classStarName);
+                    });
+                    const searchInput = document.querySelector('.search-input');
+
+                    searchInput.addEventListener('keydown', (event) => {
+                        if (event.key === 'Enter') {
+                            event.preventDefault(); // Prevent the default form submission
+                            const query = searchInput.value.trim();
+                            if (query) {
+                                // Redirect to shop.html with the search query as a parameter
+                                window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+                            }
+                        }
+                    });
+                });
+                });
+   
+    </script>
+    <script src="cart.js"></script>
+</html>
