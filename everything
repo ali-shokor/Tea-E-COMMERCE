@@ -1,0 +1,3503 @@
+.cart-container-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2rem 0; /* Added margin for spacing from other elements */
+}
+
+.your-cart {
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.8rem; /* Slightly increased font size */
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.15); /* Enhanced text shadow for better visibility */
+    color: #333; /* Added color for consistency */
+}
+
+.cart-container {
+    max-width: 85%; /* Increased max-width for more content space */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Increased gap for better spacing */
+    flex-wrap: wrap;
+    border-radius: 12px; /* Slightly rounded corners */
+    padding: 2rem; /* Increased padding for better content separation */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Adjusted border color for subtlety */
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.12); /* Slightly deeper shadow */
+    background-color: #f9f9f9; /* Added background color for better contrast */
+}
+
+.cart-container h3 {
+    position: relative;
+    left: 0.8rem;
+}
+
+.clear-cart-box {
+    margin-top: 0.3rem;
+    padding: 1rem; /* Increased padding */
+    text-align: center; /* Center aligned the clear cart button */
+}
+
+.clear-cart-button {
+    font-size: 1.6rem;
+    border-radius: 8px; /* More rounded corners */
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f4d35e; /* Slightly brighter yellow */
+    cursor: pointer;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.12); /* Slightly deeper shadow */
+}
+
+.clear-cart-button:hover {
+    background-color: #e2ae11; /* Darker hover color */
+    transform: translateY(-3px); /* Slightly higher lift */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.18);
+}
+
+.clear-cart-button:active {
+    background-color: #cc9c0d;
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-cart-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px; /* Slightly more rounded corners */
+    padding: 1.5rem; /* Increased padding */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Softer border */
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25); /* Enhanced shadow for depth */
+    background-color: #fff; /* Added white background for contrast */
+}
+
+.product-cart-display:hover {
+    box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.image-container {
+    width: 13rem; /* Increased width */
+    overflow: hidden;
+    border-radius: 8px; /* Added border-radius for rounded images */
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.image-container img:hover, .remove-cart button:hover {
+    transform: scale(1.1);
+}
+
+.quantity-user-cart {
+    height: 2rem; /* Increased height for better click targets */
+    outline: none;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05); /* Slightly deeper shadow */
+    border: 1px solid rgba(0, 0, 0, 0.15); /* Slightly darker border */
+    border-radius: 6px; /* Added border-radius for smoother edges */
+    background-color: #f2f2f2; /* Light background for contrast */
+}
+
+.quantity-user-cart button {
+    border: none;
+    background-color: rgba(32, 171, 32, 0.7); /* Slightly darker background */
+    color: white; /* Added text color for contrast */
+    padding: 0 0.5rem; /* Added padding for better spacing */
+    cursor: pointer;
+}
+
+.quantity-user-cart button:hover {
+    background-color: rgba(32, 171, 32, 0.85); /* Darker on hover */
+}
+
+.quantity-user-cart button:active {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow on click */
+}
+
+.remove-cart {
+    margin-top: 0.8rem; /* Increased margin */
+}
+
+.remove-cart button {
+    font-size: 1.2rem; /* Slightly increased font size */
+    border-radius: 12px; /* More rounded corners */
+    padding: 0.4rem 0.8rem; /* Increased padding */
+    color: whitesmoke;
+    background-color: rgba(255, 29, 29, 0.75); /* Slightly less transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added shadow */
+    cursor: pointer;
+}
+
+.remove-cart button:hover {
+    background-color: rgba(255, 29, 29, 0.9); /* Darker on hover */
+}
+
+.remove-cart button:active {
+    background-color: rgba(255, 29, 29, 0.85); /* Slightly different active color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* Slightly deeper shadow on click */
+}
+
+.order-summary {
+    margin-top: 2rem; /* Increased margin */
+    max-width: 80%; /* Slightly wider */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem; /* Increased gap for better spacing */
+    flex-wrap: wrap;
+    border-radius: 12px; /* More rounded corners */
+    padding: 2rem; /* Increased padding */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Softer border */
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.12); /* Slightly deeper shadow */
+    background-color: #f9f9f9; /* Added background color for contrast */
+}
+
+.order-summary button {
+    background-color: rgba(56, 165, 56, 0.8); /* Slightly adjusted background color */
+    color: white; /* Added text color for better contrast */
+    padding: 0.8rem 1.5rem; /* Increased padding */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.order-summary button:hover {
+    background-color: rgba(60, 195, 60, 0.9); /* Darker on hover */
+    transform: translateY(-2px); /* Lift on hover */
+}
+
+.order-summary button:active {
+    background-color: rgba(37, 126, 37, 0.9); /* Darker on active */
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.18); /* Deeper shadow */
+}
+
+.order-summary h2 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 2rem; /* Increased font size */
+    color: #333; /* Added color for consistency */
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.1); /* Added subtle text shadow */
+}
+
+.order-summary h3 {
+    margin-top: 0;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Category</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="category_view.css">
+        <link rel="stylesheet" href="shop.css">
+        <link rel="stylesheet" href="cart.css">
+        <link rel="icon" type="image/png" href="static/tea8.png">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-container">
+                        <div class="logo-box">
+                            <div class="logo"></div>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <!-- <li class="nav-links">
+                        <a href="cart.html">Cart</a>
+                    </li> -->
+                    <li class="search-container">
+                        <input type="search" autofocus aria-label="Search" class="search-input"  placeholder="Search Your Product...">
+                    </li>
+                    <li class="right-nav">
+                        <a href="cart.html">
+                            <div class="cart-box">
+                                <div class="cart"></div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="profile-box">
+                                <div class="profile-pic"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="cart-container-box">
+            <h1 class="your-cart">Your Cart</h1>
+            <div class="cart-container">
+
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input class="display-number" min="1" max="10" value="1" type="text">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+                
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input class="display-number" min="1" max="10" value="1" type="text">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+                
+            
+            
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input min="1" max="10" value="1" type="text" name="" class="display-number">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+
+
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input class="display-number" min="1" max="10" value="1" type="text">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="clear-cart-box">
+                <button class="clear-cart-button">Clear Cart</button>
+            </div>
+
+            <div class="order-summary">
+                <h2>ORDER SUMMARY: </h2>
+                <h3 class="items-salary">SUB TOTAL: 15$</h3>
+                <h3>DELIVERY: 5$</h3>
+                <h3 class="total">TOTAL: 20$</h3>
+                <button id="proceed" class="clear-cart-button">Proceed</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container1">
+                <div class="socail">
+                    <ul class="social-icons">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Refunds & Replacement</a></li>
+                        <li><a href="#">About Tea House </a></li>
+                    </ul>
+                </div>
+                <div class="more-info">
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>First Branch Location</li>
+                        <li><i class="fa fa-map-marker"></i>Second Branch Location</li>
+                        <li><i class="fa fa-phone"></i> 00961 78 957416</li>
+                        <li><i class="fa fa-envelope"></i> alishokermana@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul>
+                        <li>Shipping All Over Lebanon</li>
+                        <li>Delivery within two working days.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright Tea & Tonic | by Ali Shokor</p>
+            </div>
+    
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const cartContainer = document.querySelector('.cart-container');
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const delivery = 5;
+            
+                // Function to create a cart item element
+                function createCartItem(cartItem) {
+                    return `
+                        <div class="product-cart-display">
+                            <div class="image-container">
+                                ${cartItem.image}
+                            </div>
+                            <p class="price-cart">Price: <i class="price-number">${cartItem.price}</i></p>
+                            <div class="quantity-user-cart">
+                                <button class="minus">-</button>
+                                <input class="display-number" min="1" max="10" value="${cartItem.quantity}" type="text">
+                                <button class="add">+</button>
+                            </div>
+                            <div class="remove-cart">
+                                <button class="remove-cart-button">Remove</button>
+                            </div>
+                        </div>
+                    `;
+                }
+            
+                // Populate cart container with items
+                function renderCart() {
+                    cartContainer.innerHTML = cart.map(createCartItem).join('');
+                    attachEventListeners(); // Attach event listeners after rendering
+                }
+            
+                // Function to update the total and subtotal
+                function updateTotals() {
+                    let total = 0;
+                    cart.forEach(item => {
+                        total += parseFloat(item.price) * parseInt(item.quantity, 10); // Multiply price by quantity
+                    });
+                    const itemsSalary = document.querySelector('.items-salary');
+                    const totalText = document.querySelector('.total');
+                    itemsSalary.textContent = `SUB TOTAL: ${total}$`;
+                    totalText.textContent = `TOTAL: ${total + delivery}$`;
+                }
+            
+                // Function to update item quantity in the cart and recalculate totals
+                function updateItemQuantity(cartItemElement) {
+                    const imageUrl = cartItemElement.querySelector('img').src;
+                    const itemIndex = cart.findIndex(item => item.image === imageUrl);
+                    if (itemIndex !== -1) {
+                        const quantityInput = cartItemElement.querySelector('.display-number');
+                        cart[itemIndex].quantity = quantityInput.value;
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        updateTotals();
+                    }
+                }
+            
+                // Function to attach event listeners
+                function attachEventListeners() {
+                    const allCart = document.querySelectorAll('.product-cart-display');
+            
+                    allCart.forEach(cartItemElement => {
+                        const quantityContainer = cartItemElement.querySelector('.quantity-user-cart');
+                        const minusButton = quantityContainer.querySelector('.minus');
+                        const plusButton = quantityContainer.querySelector('.add');
+                        const quantityInput = quantityContainer.querySelector('.display-number');
+            
+                        minusButton.addEventListener('click', () => {
+                            let currentValue = parseInt(quantityInput.value, 10);
+                            if (currentValue > parseInt(quantityInput.min, 10)) {
+                                quantityInput.value = currentValue - 1;
+                                updateItemQuantity(cartItemElement);
+                            }
+                        });
+            
+                        plusButton.addEventListener('click', () => {
+                            let currentValue = parseInt(quantityInput.value, 10);
+                            if (currentValue < parseInt(quantityInput.max, 10)) {
+                                quantityInput.value = currentValue + 1;
+                                updateItemQuantity(cartItemElement);
+                            }
+                        });
+            
+                        quantityInput.addEventListener('input', () => {
+                            let value = parseInt(quantityInput.value, 10);
+                            if (value < parseInt(quantityInput.min, 10)) {
+                                quantityInput.value = quantityInput.min;
+                            } else if (value > parseInt(quantityInput.max, 10)) {
+                                quantityInput.value = quantityInput.max;
+                            }
+                            updateItemQuantity(cartItemElement);
+                        });
+            
+                        const removeButton = cartItemElement.querySelector('.remove-cart-button');
+                        removeButton.addEventListener('click', () => {
+                            const imageUrl = cartItemElement.querySelector('img').src;
+                            const itemIndex = cart.findIndex(item => item.image === imageUrl);
+                            if (itemIndex !== -1) {
+                                cart.splice(itemIndex, 1);
+                                localStorage.setItem('cart', JSON.stringify(cart));
+                                renderCart(); // Re-render the cart after removal
+                                updateTotals(); // Update totals after removal
+                            }
+                        });
+                    });
+                }
+            
+                // Initial render and total calculation
+                renderCart();
+                updateTotals();
+            
+                // Remove all items from cart
+                const removeAllButton = document.querySelector('.clear-cart-button');
+            
+                removeAllButton.addEventListener('click', () => {
+                    cartContainer.innerHTML = '';
+                    localStorage.removeItem('cart');
+                    cart.length = 0; // Clear the cart array
+            
+                    // Show empty cart message
+                    cartContainer.innerHTML = '<h2>Your cart is empty</h2>';
+                    updateTotals(); // Clear totals
+                });
+            
+                // Proceed to checkout
+                const proceed = document.getElementById('proceed');
+                proceed.addEventListener('click', () => {
+                    window.location.href = 'checkout.html';
+                });
+            });
+            
+            
+        </script>        
+        
+        
+    </body>
+    
+
+</html>
+
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const addToCartBtn = document.getElementById('addToCartBtn');
+  addToCartBtn.addEventListener('click', addToCart);
+});
+
+function addToCart() {
+  const tea = JSON.parse(localStorage.getItem('selectedTea'));
+  const quantity = document.getElementById('quantity').value;
+
+
+  const cartItem = {
+    id: tea.id,
+    name: tea.name,
+    price: tea.price,
+    quantity: parseInt(quantity),
+    image: tea.image // Add the image to the cart item
+  };
+
+  const existingItemIndex = cart.findIndex(item => item.id === cartItem.id);
+
+  if (existingItemIndex !== -1) {
+    cart[existingItemIndex].quantity += cartItem.quantity;
+  } else {
+    cart.push(cartItem);
+  }
+
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert('Item added to cart!');
+}
+
+header {
+    margin-bottom: 2rem;
+    position: relative;
+    background-color: #0a6847;
+}
+
+#category-title{
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 12rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.product-card button {
+    margin-top: 10px;
+    border-radius: 2rem;
+    background-color: #F3CA52;
+    border-color: #2f4a6b;
+    padding: 10px;
+}
+
+.product-card button:hover {
+    background-color: rgba(70, 195, 66, 0.674);
+    transition: 0.6s;
+}   
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Category</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="category_view.css">
+        <link rel="icon" type="image/png" href="static/tea8.png">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-container">
+                        <div class="logo-box">
+                            <div class="logo"></div>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <!-- <li class="nav-links">
+                        <a href="cart.html">Cart</a>
+                    </li> -->
+                    <li class="search-container">
+                        <input type="search" autofocus aria-label="Search" class="search-input"  placeholder="Search Your Product...">
+                    </li>
+                    <li class="right-nav">
+                        <a href="cart.html">
+                            <div class="cart-box">
+                                <div class="cart"></div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="profile-box">
+                                <div class="profile-pic"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <h1 id="category-title">Category View</h1>
+    <div class="product-grid" id="content"></div>
+
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="socail">
+                <ul class="social-icons">
+                    <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Refunds & Replacement</a></li>
+                    <li><a href="#">About Tea House </a></li>
+                </ul>
+            </div>
+            <div class="more-info">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i>First Branch Location</li>
+                    <li><i class="fa fa-map-marker"></i>Second Branch Location</li>
+                    <li><i class="fa fa-phone"></i> 00961 78 957416</li>
+                    <li><i class="fa fa-envelope"></i> alishokermana@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Shipping All Over Lebanon</li>
+                    <li>Delivery within two working days.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright Tea & Tonic | by Ali Shokor</p>
+        </div>
+
+    </footer>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Fetch the tea data from JSON file
+            fetch('./teatypes.JSON')
+                .then(response => response.json())
+                .then(sampleData => {
+                    console.log("Sample Data:");
+                    console.log(sampleData);
+        
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const category = urlParams.get('category').toUpperCase(); // Fetch category from URL
+        
+                    if (category && sampleData[category]) {
+                        document.getElementById('category-title').textContent = category.charAt(0) + category.slice(1).toLowerCase() + ' Tea';
+        
+                        const shuffledContent = sampleData[category].sort(() => 0.5 - Math.random());
+                        const contentDiv = document.getElementById('content');
+        
+                        shuffledContent.forEach(item => {
+                            const card = document.createElement('div');
+                            card.className = 'product-card';
+        
+                            const imgContainer = document.createElement('div');
+                            imgContainer.innerHTML = item.image;
+                            const img = imgContainer.firstChild;
+                            img.classList.add('tea-image');
+        
+                            img.addEventListener('click', () => {
+                                localStorage.setItem('selectedTea', JSON.stringify(item));
+                                window.location.href = 'item_view.html';
+                            });
+        
+                            const title = document.createElement('h3');
+                            title.textContent = item.name;
+        
+                            const price = document.createElement('p');
+                            price.textContent = item.price;
+        
+                            const button = document.createElement('button');
+                            button.className = 'btn btn-primary';
+                            button.textContent = 'Buy Now';
+                            button.addEventListener('click', () => {
+                                localStorage.setItem('selectedTea', JSON.stringify(item));
+                                window.location.href = 'item_view.html';
+                            });
+        
+                            card.appendChild(img);
+                            card.appendChild(title);
+                            card.appendChild(price);
+                            card.appendChild(button);
+                            contentDiv.appendChild(card);
+                        });
+                    } else {
+                        document.getElementById('content').textContent = 'Category not found.';
+                    }
+                })
+                .catch(error => console.error('Error loading the JSON file:', error));
+                const searchInput = document.querySelector('.search-input');
+
+                searchInput.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault(); // Prevent the default form submission
+                        const query = searchInput.value.trim();
+                        if (query) {
+                            // Redirect to shop.html with the search query as a parameter
+                            window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+                        }
+                    }
+                });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="checkout">
+        <h1>Checkout</h1>
+        <form action="thankyou.html" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My eCommerce Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+/*color: #29e74595;*/
+:root {
+  --cambridge-blue: #8aa387;
+  --beige: #f5f5dc;
+  --lion: #a68a64;
+  --dark-moss-green: #556b2f;
+  --paynes-gray: #3a606e;
+  --white: #ffffffec;
+}
+
+* {
+    transition: 0.3s ease;
+    
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+
+section, footer {
+    animation: slideUpFadeIn 1s ease-out forwards;
+}
+/* Header */
+/*2d4829df*/
+/* nery  nice #3c584ec9*/
+header {
+    animation: slideUpFadeIn 1s ease-out forwards;
+    background-color: #0a6847cf;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed ;
+    z-index: 1000;
+    /*#333c45*/
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    white-space: nowrap;
+}
+
+.logo-container {
+    /*flex: 1;*/
+    display: flex;
+    
+}
+
+
+.logo-box {
+    background-color: white;
+    width: 24rem; /* Adjust width as needed */
+    height: 4rem; /* Adjust height as needed */
+    mix-blend-mode: multiply;
+}
+
+.logo {
+    background-image: url("./images/logo-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 1rem;
+}
+
+.nav-links {
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    
+    
+}
+
+
+.nav-links a {
+    color: rgba(0, 0, 0, 0.788);
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    
+}
+
+
+.search-container {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    position: relative;
+    width: 10rem;
+}
+
+.search-input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 80%;
+    background-color: #e6f7f1;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    gap: 1.6rem;
+}
+
+.profile-box, .cart-box {
+    border-radius: 50%;
+    padding: 0.3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #00000000;
+    overflow: hidden;
+}
+
+.profile-box {
+    background-color: #7aba7851;
+    
+}
+
+.profile-pic {
+    background-image: url('./images/profile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+}
+
+.cart {
+    background-image: url('./images/cart.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    mix-blend-mode: multiply;
+    height: 30%;
+    padding: 1.2rem;
+}
+
+.nav-links a {
+    padding: 2px;
+}
+.nav-links a:hover {
+    background-color: #f3cb52d5;
+    box-shadow: 0 4px 8px rgba(43, 30, 30, 0.604);
+    transform: scale(1.1);
+
+}
+
+.search-container input:hover {
+    transform: scale(1.05);
+    background-color: #e6f7f1;
+}
+
+.cart-box:hover, .profile-box:hover {
+    background-color: #f3cb52d5;
+}
+
+.cart-box:hover {
+    transform: translateY(-0.7rem);
+}
+
+@media (max-width: 65rem) {
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Add spacing between items */
+        padding: 1rem 0; /* Add padding for breathing room */
+    }
+
+    .logo-container {
+        margin-bottom: 1rem; /* Add some spacing below the logo */
+        margin-right: auto;
+        width: 100%; /* Make sure the logo takes full width */
+        display: flex;
+        justify-content: center; /* Center the logo */
+    }
+
+    .logo-box {
+        width: 18rem; /* Reduce the logo size for smaller screens */
+        height: 3rem; /* Adjust the logo height */
+    }
+
+    .nav-links {
+        width: 100%; /* Make nav-links take full width */
+        margin-right: auto;
+        justify-content: center; /* Center the nav links */
+        gap: 1.5rem; /* Adjust gap for better spacing */
+        order: 2; /* Ensure the nav links appear below the logo */
+    }
+
+    .search-container {
+        width: 50%; 
+        margin-right: 3rem;
+        justify-content: center; /* Center the search bar */
+    }
+
+    .search-input {
+        width: 80%; /* Adjust width for better fit */
+    }
+
+    .right-nav {
+        width: 100%; /* Make the right nav take full width */
+        justify-content: center; /* Center the profile and cart icons */
+        gap: 2rem; /* Adjust gap between icons */
+        order: 3;
+        margin-left: auto;
+    }
+
+    .profile-box, .cart-box {
+        width: 3rem; /* Adjust size for smaller screens */
+        height: 3rem; /* Adjust size for smaller screens */
+    }
+}
+
+.background-first {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/first.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.box-first {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+.test {
+    font-size: 2rem;
+    color: #344942c9;
+}
+
+.test h2 {
+    padding-left: 3rem;
+}
+
+.test div {
+    padding-left: 3rem;
+    width: 65%;
+}
+
+@media (max-width: 65rem) {
+    .box-first {
+        padding-top: 17rem;
+    }
+}
+
+.advantage-box {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(149, 144, 144, 0.456);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.advantage-mini-box {
+    width: 6.4rem; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align text and image */
+    text-align: center;
+}
+
+.advantage {
+    width: 2rem; /* Adjust size as needed */
+    height: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0.5rem; /* Add space between image and text */
+}
+
+.advantage-text {
+    font-size: 0.9rem; /* Adjust font size as needed */
+    color: #333; /* Customize text color */
+}
+
+
+.chemical {
+    background-image: url('./static/flask.png');
+}
+
+.vitamin {
+    background-image: url('./static/vitamin.png');
+}
+
+.mentality {
+    background-image: url('./static/mental-health.png');
+}
+
+.gluten {
+    background-image: url('./static/gluten-free.png');
+}
+
+a {
+    text-decoration: none;
+}
+
+.products-container {
+    color: #556b2f;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.product-text {
+    font-size: 2rem;
+}
+
+.product-text h2 {
+    font-family: Georgia, serif
+}
+
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.products-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.product-card {
+    background-color: var(--white);
+    border: 1px solid var(--cambridge-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Adjust max width */
+    padding: 1rem;
+    width: 21rem;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-card:hover h3 {
+    color: rgba(33, 88, 190, 0.674);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .product-grid {
+        gap: 1rem;
+    }
+
+    .product-card {
+        width: 16rem; /* Adjust card width for medium screens */
+    }
+}
+
+@media (max-width: 950px) {
+    .products-container {
+        padding: 2rem 0;
+    }
+
+    .product-text h2 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        width: 10rem; /* Make cards take full width */
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 6rem; /* Slight padding on sides */
+    }
+
+    .product-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-card p {
+        font-size: 0.9rem;
+    }
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffffec;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 30px;
+    color: #333;
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #005a2c;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.about-content p:hover {
+    color: #007a33;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+  
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    width: 100vw;
+    height: auto;
+    background-color: #333;
+    margin-top: 1.4rem;
+
+    color: white !important;
+}
+
+.container1 ul{
+    list-style-type: none;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.3rem 0;
+    line-height: 1.7;
+    font-size: 1.15rem;
+}
+
+
+.contacts li a, .socail li a{
+    color: white !important;
+}
+
+.socail li a {
+    font-size: 1.5rem;
+}
+
+.contacts li a:hover, .socail li a:hover{
+    color: #1a9e5abe !important;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(252, 252, 252, 0.407);
+}
+
+.container1 i {
+    position: relative;
+    right: 5px;
+}
+
+@media (max-width: 950px) {
+    .container1 {
+        font-size: 0.8rem;
+    }
+}
+/* Hero Section */
+/* .hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Products Section */
+/* .products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cart Page */
+
+
+/*
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Checkout Page */
+/*
+.checkout {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+/*
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+} */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea & Tonic</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="static/tea8.png">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            
+            <ul>
+                <li class="logo-container">
+                    <div class="logo-box">
+                        <div class="logo"></div>
+                    </div>
+                </li>
+                <li class="nav-links">
+                    <a href="home.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <!-- <li class="nav-links">
+                    <a href="cart.html">Cart</a>
+                </li> -->
+                <li class="search-container">
+                    <input type="search" autofocus aria-label="Search" class="search-input"  placeholder="Search Your Product...">
+                </li>
+                <li class="right-nav">
+                    <a href="cart.html">
+                        <div class="cart-box">
+                            <div class="cart"></div>
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="profile-box">
+                            <div class="profile-pic"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="background-first">
+        <div class="box-first">
+            <div class="test">
+                <h2>Tea & Tonic</h2>
+                <div>Discover the Perfect Blend for Every Mood: Elevate Your Tea Experience with Our Premium, Artfully Crafted Selections.</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="advantage-box">
+        <div class="advantage-mini-box">
+            <div class="advantage chemical"></div>
+            <div class="advantage-text">Pesticides and Chemicals Free</div>
+        </div>
+        <div class="advantage-mini-box">
+            <div class="advantage vitamin"></div>
+            <div class="advantage-text">Rich in Vitamins</div>
+        </div>
+        <div class="advantage-mini-box">
+            <div class="advantage mentality"></div>
+            <div class="advantage-text">Promotes Mental Health</div>
+        </div>
+        <div class="advantage-mini-box">
+            <div class="advantage gluten"></div>
+            <div class="advantage-text">Gluten-Free</div>
+        </div>
+    </section>
+    
+
+    <section class="products-container">
+        <div class="product-text">
+            <h2>Featured Products</h2>
+            <h5>Shop Our Finest Teas: Elevate Your Everyday Sip</h5>
+        </div>
+        <div class="product-grid">
+            <a href="category_view.html?category=GREEN+TEA" class="product-card">
+                <img src="static/greentea.png" alt="Tea 1">
+                <h3>Green Tea</h3>
+                <p>A powerful elixir for heart health, </p>
+                 <p> brain function, and overall well-being.</p>
+            </a>
+            <a href="category_view.html?category=BLACK+TEA" class="product-card">
+                <img src="static/6-4.jpg" alt="Tea 2">
+                <h3>Black Tea</h3>
+                <p>Energize your day with enhanced focus,</p>
+                   <p>digestive support, and antioxidant-rich benefits</p>
+            </a>
+            <a href="category_view.html?category=WHITE+TEA" class="product-card">
+                <img src="static/istockphoto-1146980588-612x612.jpg" alt="Tea 3">
+                <h3>White Tea</h3>
+                <p>Subtle elegance with benefits for hydration,</p>
+                 <p> immune support, and overall vitality.</p>
+            </a>
+        </div>
+        <h2></h2>
+        <div class="product-grid">
+            <a href="category_view.html?category=FRUIT+BLENDS" class="product-card">
+                <img src="static/Screenshot 2024-07-30 220832.png" alt="Tea 1">
+                <h3>Fruit Blends</h3>
+                <p> A burst of flavor packed with vitamins, </p>
+                  <p>antioxidants, and refreshing hydration</p>
+            </a>
+            <a href="category_view.html?category=MATCHA+BLENDS" class="product-card">
+                <img src="static/Screenshot 2024-07-30 222851.png" alt="Tea 2">
+                <h3>Matcha Blends</h3>
+                <p>Elevate your day with sustained energy,</p>
+                  <p> mental clarity, and immune-boosting properties</p>
+            </a>
+            <a href="category_view.html?category=HERBAL+TEA" class="product-card">
+                <img src="static/Screenshot 2024-07-30 222401.png" alt="Tea 3">
+                <h3>Herbal Tea</h3>
+                <p> Embrace wellness with calming effects,</p>
+                 <p> improved digestion, and rich antioxidants</p>
+                 
+            </a>
+        </div>
+         <h2></h2>
+        <div class="product-grid">
+          <a href="category_view.html?category=ROOIBOS%20%26%20HONEY%20BUSH" class="product-card">
+                <img src="static/Screenshot 2024-07-30 224004.png" alt="Tea 1">
+                <h3>Rooibos & Honey Bush</h3>
+                <p> Naturally caffeine-free, boosts immunity, </p>
+                  <p>promotes healthy skin, and supports bone health.</p>
+            </a>
+            <a href="category_view.html?category=PREMIUM+OOLONG" class="product-card">
+                <img src="static/Screenshot 2024-07-30 224610.png" alt="Tea 2">
+                <h3>Premium Oolong</h3>
+                <p> Combines the benefits of green and black tea :</p>
+                  <p> balanced energy, skin health, and antioxidant.</p>
+            </a>
+            <a href="category_view.html?category=other" class="product-card">
+                <img src="static/Screenshot 2024-07-30 224811.png" alt="Tea 3">
+                <h3>Other</h3>
+                <p>Discover a world of flavors and benefits with </p>
+                 <p> our diverse tea selection.</p>
+            </a>
+        </div>
+        </div>
+    </section>
+   
+    <section class="about-us">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>Welcome to our tea shop! We are passionate about bringing the finest teas from around the world to your cup. Our team is dedicated to curating a selection of premium teas, providing exceptional service, and fostering a community of tea enthusiasts.</p>
+            <p>Founded in 2024, our mission is to deliver high-quality, sustainably sourced teas that you can enjoy at home or gift to loved ones. From classic black teas to exotic blends, we are committed to excellence in every cup.</p>
+            <p>Thank you for choosing us as your go-to source for all things tea. We hope you enjoy our offerings as much as we enjoy bringing them to you!</p>
+        </div>
+        <div class="about-image">
+            <img src="static/drinking-tea_every-day_delays-aging_mint-tea_1m.jpg" alt="Assorted Teas">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="socail">
+                <ul class="social-icons">
+                    <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Refunds & Replacement</a></li>
+                    <li><a href="#">About Tea House </a></li>
+                </ul>
+            </div>
+            <div class="more-info">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i>First Branch Location</li>
+                    <li><i class="fa fa-map-marker"></i>Second Branch Location</li>
+                    <li><i class="fa fa-phone"></i> 00961 78 957416</li>
+                    <li><i class="fa fa-envelope"></i> alishokermana@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Shipping All Over Lebanon</li>
+                    <li>Delivery within two working days.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright Tea & Tonic | by Ali Shokor</p>
+        </div>
+
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const advantageBox = document.querySelector('.advantage-box');
+            const headerHeight = header.offsetHeight;
+            const advantageBoxTop = advantageBox.getBoundingClientRect().top + window.scrollY;
+        
+            if (window.scrollY >= advantageBoxTop - headerHeight) {
+                header.style.position = 'absolute';
+                header.style.top = `${advantageBoxTop - headerHeight}px`;
+                header.style.transition = 'none';
+            } else {
+                header.style.transition = '0.3 ease'
+                header.style.position = 'fixed';
+                header.style.top = '0';
+            }
+            
+        });
+        const searchInput = document.querySelector('.search-input');
+
+            searchInput.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Prevent the default form submission
+                    const query = searchInput.value.trim();
+                    if (query) {
+                        // Redirect to shop.html with the search query as a parameter
+                        window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+                    }
+                }
+            });
+
+    </script>
+    <!-- Hero Section -->
+    <!-- <section class="hero">
+        <h1>Welcome to My Store</h1>
+        <p>Discover the latest trends and deals.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    Featured Products 
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <a href="product.html" class="btn">View Product</a>
+            </div>
+             Repeat for other products
+        </div>
+    </section>-->
+
+    <!-- Footer -->
+    <!-- <footer>
+        <p>&copy; 2024 My eCommerce Store</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer> -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login & Sign up Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="static/tea8.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-image: url("images/tea-background2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+       
+    }
+    
+    .main {
+        background-color: rgba(255, 255, 255, 0.219);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        opacity: 0; /* Start hidden */
+        transform: translateY(20px); /* Start slightly below */
+        animation: slideUpFadeIn 1s ease-out forwards;
+        animation-delay: 0.5s;
+    }
+    
+    input {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid dodgerblue;
+        width: 100%;
+        position: relative;
+        bottom: 0px;
+        opacity: 0;
+        animation: fadeIn 0.8s ease-in-out forwards;
+        animation-delay: 1s;
+    }
+    
+    .form-group {
+        height: 70px;
+        opacity: 0;
+        animation: fadeIn 0.8s ease-in-out forwards;
+        animation-delay: 1.2s;
+    }
+    
+    label {
+        position: relative;
+        color: rgb(255, 255, 255) !important;
+        font-size: 18px;
+        top: 32px;
+        left: 5px;
+        transition: .3s;
+        z-index: -1;
+    }
+    
+    .label-selected {
+        position: relative;
+        font-size: 13px;
+        color: rgb(82, 82, 82);
+        top: 5px;
+        left: 5px;
+    }
+    
+    button {
+        border: none;
+        background-color: dodgerblue;
+        color: #fff;
+        font-weight: 500;
+        padding: 10px;
+        width: 100px;
+        border-radius: 30px;
+        margin-left: 75%;
+        transition: .5s;
+        transform: translate(0px, 0px);
+        opacity: 0;
+        animation: fadeIn 0.8s ease-in-out forwards;
+        animation-delay: 1.5s;
+    }
+    
+    button:hover {
+        box-shadow: 0px 12px 25px -10px rgb(61, 61, 61);
+        transform: translate(0px, -5px);
+    }
+    
+    .links {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+        transition: 0.3s ease;
+        padding: 5px;
+        opacity: 0;
+        animation: fadeIn 0.8s ease-in-out forwards;
+        animation-delay: 1.7s;
+    }
+    
+    .links:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #e72929e0;
+        color: white !important;
+        transform: scale(1.1);
+        text-decoration: none !important;
+    }
+    
+    #overlay {
+        height: 530px;
+        width: 600px;
+        position: absolute;
+        transform: translate(0px, -25px);
+        border-radius: 25px;
+        background-image: url("images/tea.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: .5s;
+        opacity: 0;
+        animation: fadeIn 1.2s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+    
+    .final-box {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .final {
+        margin-top: 10px;
+        background-image: url('iamges/logo-2.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 35rem;
+        height: 8rem;
+        mix-blend-mode: multiply;
+        filter: brightness(1.2);
+    }
+    @media only screen and (max-width: 1200px) {
+        #overlay {
+            display: none;
+        }
+        .col-md-6 {
+            width: 100%;
+            padding: 0;
+        }
+        #signUp, #login {
+            width: 100%;
+            margin: 0 auto;
+        }
+        #signUp {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 1201px) {
+        #signUp, #lognin {
+            display: block !important;
+        }
+    }
+    @media only screen and (max-width:767px) {
+    
+        .final {
+            background-size: 100%;  /*nice*/
+            transform: scale(0.8);
+        }
+    }
+    
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideUpFadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .extra1, .extr, .extra3, .extra4 {
+        color: #e7292995;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    </style>
+
+<body>
+    <div class="container p-4">
+        <div class="row main mt-5">
+            <!-- sign up form -->
+            <div class="col-md-6 p-5" id="signUp">
+                <h1 class="display-4 text-center">Sign up</h1>
+                <form class="d-flex justify-content-center mt-4">
+                    <div class="w-75">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input class="email" type="email">
+                            <span class="extra1"></span>
+                        </div>
+                        <div class="form-group my-4">
+                            <label for="">Password</label>
+                            <input class="password" type="password">
+                            <span class="extra2"></span>
+                        </div>
+                        <button class="sign-up"type="submit">Register</button>
+                        <div class="d-flex justify-content-between mt-5">
+                            <a class="links" href="#" id="loginLink">Already have an Account?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Login Form -->
+            <div class="col-md-6 p-5" id="login">
+                <h1 class="display-4 text-center">Login</h1>
+                <form class="d-flex justify-content-center mt-4">
+                    <div class="w-75">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input class="email" type="email">
+                            <span class="extra3"></span>
+                        </div>
+                        <div class="form-group my-4">
+                            <label for="">Password</label>
+                            <input class="password" type="password">
+                            <span class="extra4"></span>
+                        </div>
+                        <button class="log-in" type="submit">Login</button>
+                        <div class="d-flex justify-content-between mt-5">
+                            <a class="links" href="#" id="registerLink">Create an Account?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="overlay"></div>
+        </div>
+        <div class="final-box">
+            <div class="final">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Elements for Signup
+        let signupEmail = document.querySelector('#signUp .email');
+        let signupPassword = document.querySelector('#signUp .password');
+        let signupButton = document.querySelector('.sign-up');
+
+        // Elements for Login
+        let loginEmail = document.querySelector('#login .email');
+        let loginPassword = document.querySelector('#login .password');
+        let loginButton = document.querySelector('.log-in')
+
+        /*signupEmail.value = ''
+        loginEmail.value = ''
+        loginButton.value = ''*/
+
+        let extra1 = document.querySelector('#signUp .extra1')
+        let extra2 = document.querySelector('#signUp .extra2')
+        let extra3 = document.querySelector('#login .extra3')
+        let extra4 = document.querySelector('#login .extra4')
+        // Load existing data from localStorage or initialize an empty object
+        let existingData = JSON.parse(localStorage.getItem('userData')) || {};
+
+        // Function to save existingData back to localStorage
+        function saveData() {
+            localStorage.setItem('userData', JSON.stringify(existingData));
+        }
+
+        // Signup Functionality
+        signupButton?.addEventListener('click', (e) => {
+            e.preventDefault();
+            const email = signupEmail?.value.trim();
+            const password = signupPassword?.value.trim();
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+            if (existingData[email]) {
+                extra1.textContent = 'This email has been used before'
+            } else if (emailRegex.test(email)) {
+                if (password.length >= 5) {
+                    existingData[email] = password;
+                    saveData(); // Save to localStorage
+                    extra2.textContent = ''
+                    extra1.style.color = '#29e74595';
+                    extra1.textContent =  'Login successful!';
+                    window.location.href = 'home.html'; // Redirect to homepage
+                } else {
+                    extra1.textContent = ''
+                    extra2.textContent = 'Your password should have at least 5 characters';
+                }
+            } else {
+                extra1.textContent = 'Incorrect Gmail format';
+                extra2.textContent = ''
+            }
+        });
+
+        // Login Functionality
+        loginButton?.addEventListener('click', (e) => {
+            e.preventDefault();
+            const email = loginEmail?.value.trim();
+            const password = loginPassword?.value.trim();
+
+            if (email && password && existingData[email] && existingData[email] === password) {
+                extra3.style.color = '#29e74595';
+                extra3.textContent =  'Login successful!';
+                extra4.textContent = ''
+                window.location.href = 'home.html'; // Redirect to homepage
+            } else {
+                extra3.textContent = 'Email or Password Incorrect!'
+            }
+        });
+
+        // Input focus and blur effects
+        document.querySelectorAll('input').forEach((item) => {
+            item.addEventListener("focus", function () {
+                item.previousElementSibling.classList.add('label-selected');
+            });
+            item.addEventListener("blur", function () {
+                if (item.value === '') {
+                    item.previousElementSibling.classList.remove('label-selected');
+                }
+            });
+        });
+
+        // Switch between forms
+        document.getElementById("registerLink").addEventListener("click", function () {
+            if (window.innerWidth < 1200) {
+                document.getElementById("signUp").style.display = 'block';
+                document.getElementById("login").style.display = 'none';
+            } else {
+                document.getElementById("overlay").style.transform = 'translate(550px , -25px)';
+            }
+        });
+
+        document.getElementById("loginLink").addEventListener("click", function () {
+            if (window.innerWidth < 1200) {
+                document.getElementById("login").style.display = 'block';
+                document.getElementById("signUp").style.display = 'none';
+            } else {
+                document.getElementById("overlay").style.transform = 'translate(0px , -25px)';
+            }
+        });
+        
+    </script>
+</body>
+</html>
+
+header {
+    margin-bottom: 1.15rem;
+}
+.big-box {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.description-container-box {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.162);
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+/* Allow wrapping to prevent overlapping on small screens */
+.description-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.category-name {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 1px #3333332f;
+    color: #333;
+}
+
+/* Adjust image-container for responsiveness */
+.image-container {
+    width: 100%;
+    max-width: 300px; /* Adjust this value to control the image size */
+    height: auto;
+    margin-bottom: 1rem; /* Add margin for spacing when wrapped */
+}
+
+/* Ensure consistent flex behavior for both columns */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Image box responsiveness */
+.image-box {
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-box img:hover {
+    transform: scale(1.1);
+}
+
+.description-text{
+    width: auto;
+    height: auto;
+}
+
+/* Make sure h2 headers and spans are aligned */
+.description-container h2 {
+    margin-top: 0;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: rgba(119, 136, 34, 0.736);
+}
+
+.description-container div {
+    text-align: left;
+}
+
+.description-container span {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(36, 36, 36, 0.79);
+    position: relative;
+ 
+    left: 0.4rem;
+}
+
+i {
+    margin-top: 1rem;
+}
+
+
+
+.stars {
+    font-size: 2rem;
+    color: #ccc; /* Default star color */
+    cursor: pointer;
+    display: flex; /* Display stars in a row */
+}
+
+.selected {
+    color: gold; /* Color for selected stars */
+}
+
+.star {
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+
+
+/* Left-align the benifits section text */
+.benifits, .description, .prepare {
+    width: 100%; /* Ensures the benefits section takes full width */
+    text-align: left;
+    display: block;
+}
+
+.benifits, .prepare {
+    margin-top: 1rem;
+}
+
+.benifits h2 {
+    margin-bottom: 0;
+}
+
+.benifits ul {
+    position: relative;
+    right: 2.2rem;
+    
+    
+}
+.benifits li {
+    padding-right: 0.4rem;
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 0.4rem;
+}
+@media (max-width: 1048px) {
+    .description-container .span {
+        font-size: 0.5rem !important;
+    }
+
+    .description-text {
+        width: 25rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .description-text {
+        width: 20rem;
+    }
+}
+
+.adding-items {
+    margin-left: 0.4rem;
+    text-align: left;
+}
+
+.adding-items input {    
+    margin-bottom: 0.5rem;  
+    margin-left: 0.3rem;
+    width: 40%;
+    padding: 10px 12px; /* Slightly larger padding for better usability */
+    border: 1px solid #babe2a; /* Slightly darker border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none; /* Remove default outline */
+    font-size: 1rem; /* Slightly larger font for better readability */
+}
+
+.adding-items input:hover {
+    color: black ;
+    border: 1px solid #e5ea59; /* Consistent border color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.adding-items input:focus {
+    color: white;
+    border: 1px solid #d9ea59; /* Maintain focus border color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on focus */
+    background-color: rgba(119, 136, 34, 0.7); /* Subtle background change on focus */
+}
+
+.adding-items input:active {
+    color: white;
+    border: 1px solid #dcea59; /* Keep the active border color consistent */
+    background-color: rgba(145, 165, 43, 0.736); /* Match the active background color with focus */
+}
+
+
+.quantity-input {
+    padding-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.button-cart {
+    border-radius: 5px;
+    margin-left: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f3cb52;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-cart:hover {
+    background-color: #e2ae11e6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-cart:active {
+    background-color: #cc9c0d;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Item Details</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="category_view.css">
+        <link rel="stylesheet" href="item_view.css">
+        <link rel="icon" type="image/png" href="static/tea8.png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-container">
+                        <div class="logo-box">
+                            <div class="logo"></div>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <!-- <li class="nav-links">
+                        <a href="cart.html">Cart</a>
+                    </li> -->
+                    <li class="search-container">
+                        <input type="search" autofocus aria-label="Search" class="search-input"  placeholder="Search Your Product...">
+                    </li>
+                    <li class="right-nav">
+                        <a href="cart.html">
+                            <div class="cart-box">
+                                <div class="cart"></div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="profile-box">
+                               <div class="profile-pic"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <div class="big-box">
+    <div class="description-container-box">
+        <h1 class="category-name">White Tea name</h1>
+        <div class="description-container">
+            <div class="flex-column image-container">
+                <div class="image-box">
+                    <img src="static/Sencha_Matcha.png" alt="test">
+                </div>
+                <i class="price">15$</i>
+                <div id="ratingContainer" class="stars teaRating">
+                    <div class="star1">★</div>
+                    <div class="star2">★</div>
+                    <div class="star3">★</div>
+                    <div class="star4">★</div>
+                    <div class="star5">★</div>
+                </div>
+                
+                
+            </div>
+            <div class="flex-column description-text">
+                <div class="description"> <h2>Descritption:</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere eum omnis repudiandae, labore reiciendis aliquam quam et fuga nulla cupiditate voluptatibus quaerat sequi minima similique ex. Quas, debitis velit.</span></div>
+                <div class="prepare"><h2>How To Prepare:</h2><span> made solely of the rare and high-class tencha tea leaves."</span></div>
+                <div class="benifits"><h2>Beninfits:</h2><span>
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+            </span></div>
+            </div>
+        </div>
+
+        <div class="adding-items">
+            <div class="quantity-input">
+                <label class="quantity" for="quantity">QUANTITY:</label>
+                <input type="number" name="quantity" id="quantity" max="10" min="1" value="1">
+                <button id="addToCartBtn" class="button-cart">ADD TO CART</button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container1">
+            <div class="socail">
+                <ul class="social-icons">
+                    <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Refunds & Replacement</a></li>
+                    <li><a href="#">About Tea House </a></li>
+                </ul>
+            </div>
+            <div class="more-info">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i>First Branch Location</li>
+                    <li><i class="fa fa-map-marker"></i>Second Branch Location</li>
+                    <li><i class="fa fa-phone"></i> 00961 78 957416</li>
+                    <li><i class="fa fa-envelope"></i> alishokermana@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li>Shipping All Over Lebanon</li>
+                    <li>Delivery within two working days.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright Tea & Tonic | by Ali Shokor</p>
+        </div>
+
+    </footer>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Clear the content of specific containers before populating them
+            document.querySelector('.category-name').textContent = '';
+            document.querySelector('.price').textContent = '';
+            document.querySelector('.description span').textContent = '';
+            document.querySelector('.prepare span').textContent = '';
+            document.querySelector('.image-box').innerHTML = ''; // Clear the image container
+            document.querySelector('.benifits ul').innerHTML = '';
+            const tea = JSON.parse(localStorage.getItem('selectedTea'));
+
+           
+            fetch('./teatypes.JSON')
+                .then(response => response.json())
+                .then(sampleData => {
+                    const tea = JSON.parse(localStorage.getItem('selectedTea'));
+        
+                    if (tea) {
+                        /*if (tea.rating == 1) {
+                            document.querySelector('.star1').classList.add = 'selector'
+                        }*/
+                        document.querySelector('.category-name').textContent = tea.name;
+                        document.querySelector('.price').textContent = `${tea.price}`;
+                        document.querySelector('.description span').textContent = tea.description;
+                        document.querySelector('.prepare span').textContent = tea.how_to_prepare;
+                        
+                        // Populate benefits list
+                        const teaBenefits = document.querySelector('.benifits ul');
+                        tea.benefits.forEach(benefit => {
+                            const li = document.createElement('li');
+                            li.textContent = benefit;
+                            teaBenefits.appendChild(li);
+                        });
+
+                        // Populate main image
+                      
+                        const teaImageContainer = document.querySelector('.image-box');
+                        teaImageContainer.innerHTML = tea.image;
+                        document.querySelector('image-box img').alt = tea.name
+                    }
+                });
+                
+
+                const stars = document.querySelectorAll('.teaRating');
+                const star1 = document.querySelector('star1')
+                const star2 = document.querySelector('star2')
+                const star3 = document.querySelector('star3')
+                const star4 = document.querySelector('star4')
+                const star5 = document.querySelector('star5')
+                // Function to handle the star selection
+                function handleStarClick(selectedClass) {
+
+                    document.querySelector('.star1').classList.remove('selected')
+                    document.querySelector('.star2').classList.remove('selected')
+                    document.querySelector('.star3').classList.remove('selected')
+                    document.querySelector('.star4').classList.remove('selected')
+                    document.querySelector('.star5').classList.remove('selected')
+
+                    if (selectedClass == 'star1') {
+                        document.querySelector('.star1').classList.add('selected')
+                        tea.rating = 1
+                        localStorage.setItem('selectedTea', JSON.stringify(tea));
+                        
+                        localStorage.setItem('selectedTea', JSON.stringify(tea));
+                        updateStarSelection(rating);
+                    }
+                    else if (selectedClass == 'star2') {
+                        for (let i = 1; i <= 2 ; i++) {
+                            document.querySelector(`.star${i}`).classList.add('selected')
+                            }
+                        tea.rating = 2
+                    }
+                    else if (selectedClass == 'star3') {
+                        for (let i = 1; i <= 3 ; i++) {
+                            document.querySelector(`.star${i}`).classList.add('selected')
+                            }
+                        tea.rating = 3
+                    }
+                    else if (selectedClass == 'star4') {
+                        for (let i = 1; i <= 4 ; i++) {
+                            document.querySelector(`.star${i}`).classList.add('selected')
+                            }
+                        tea.rating = 4
+                    }
+                    else if (selectedClass == 'star5') {
+                        for (let i = 1; i <= 5 ; i++) {
+                        document.querySelector(`.star${i}`).classList.add('selected')
+                        }
+                        tea.rating = 5
+                    }
+                    
+                }
+                
+                // Add event listeners to each star
+                stars.forEach((star) => {
+                    star.addEventListener('click', (e) => {
+                        const classStarName = e.target.classList
+                        handleStarClick(classStarName);
+                    });
+                    const searchInput = document.querySelector('.search-input');
+
+                    searchInput.addEventListener('keydown', (event) => {
+                        if (event.key === 'Enter') {
+                            event.preventDefault(); // Prevent the default form submission
+                            const query = searchInput.value.trim();
+                            if (query) {
+                                // Redirect to shop.html with the search query as a parameter
+                                window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+                            }
+                        }
+                    });
+                });
+                });
+   
+    </script>
+    <script src="cart.js"></script>
+</html>
+
+#category-title {
+    font-size: 3rem;
+    color: #333;
+}
+
+.shop-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    justify-content: center;
+    padding-bottom: 6px;
+    margin-bottom: 1rem;
+}
+
+.shop-option-button {
+    cursor: pointer;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #7b9e69bf;
+    font-size: 1.1rem;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-button {
+    display: none;
+}
+
+.shop-option-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: #75a75cbf;
+
+}
+
+.shop-option-button:focus, .selected {
+    background-color: #3d6728bf;
+}
+
+{
+    "GREEN TEA": [
+      {
+        "id": 1,
+        "name": "CINNAMON ORANGE GREEN TEA",
+        "price": "15.00 $",
+        "description": "An energizing blend based around the eternally uplifting flavors of cinnamon and orange. (100 grams makes 65 mugs)",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Premium sencha green tea, orange peel, mallow blossoms, safflowers, sunflower petals and cinnamon",
+        "benefits": [
+          "aids in weight loss",
+          "boosts antioxidants level",
+          "balances cholesterol",
+          "prevents diabetes"
+        ],
+        "image": "<img src=\"static/CinnamonOrange.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 2,
+        "name": "TURMERIC MATCHA",
+        "price": "15.00 $",
+        "description": "Whether you’re trying to lose weight or just enjoy the naturally wholesome flavors, allow this tea to become the cherry on top for your healthy journey.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Matcha, turmeric, ginger, lemongrass, liquorice roots, orange peel and lemon peel.",
+        "benefits": [
+          "boosts energy level",
+          "detoxifies the body",
+          "aids in weight loss",
+          "boosts immunity",
+          "prevents arthritis and rheumatism",
+          "boosts brain function"
+        ],
+        "image": "<img src=\"static/Turmeric_Matcha.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 3,
+        "name": "EARL GREY GREEN TEA",
+        "price": "15.00 $",
+        "description": "A beautiful balance of flavors, giving a rich, deep-amber infusion perfumed with exotic bergamot. It’s a tea that soothes and uplifts with every sip.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Earl grey, green tea, rare rose petals and a touch of bergamot.",
+        "benefits": [
+          "eases anxiety",
+          "soothes sore throat",
+          "boosts metabolism",
+          "aids digestion"
+        ],
+        "image": "<img src=\"static/EarlGreyGreen.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 4,
+        "name": "GINGER PINEAPPLE GREEN TEA",
+        "price": "15.00 $",
+        "description": "Discover big authentic flavors in this blend, using only 100% natural certified organic ingredients.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Green tea, ginger and pineapple.",
+        "benefits": [
+          "boosts immunity",
+          "prevents water retention",
+          "aids in weight loss",
+          "promotes a healthy skin"
+        ],
+        "image": "<img src=\"static/GingerPineApple.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 5,
+        "name": "VITALITEA’L GREEN TEA",
+        "price": "15.00 $",
+        "description": "For green tea lovers looking for a bolder brew, we bring you an exotic twist that delights the nose as well as the palate.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Sencha green tea, ginseng roots, pineapple and ginger roots.",
+        "benefits": [
+          "boosts immunity",
+          "aids in weight loss",
+          "maintains joint health",
+          "improves focus"
+        ],
+        "image": "<img src=\"static/Vitality.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      },
+      {
+        "id": 6,
+        "name": "MATCHA BERRIES",
+        "price": "15.00 $",
+        "description": "Who says that having a sweet tooth is such a bad thing? We’ve incorporated the natural, pure taste of green tea with flavorful wild berries that will please any sweet-loving palate.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Green tea sencha, ginger, dried apples, dried beetroot, liquorice root, elderberries, Japanese green tea matcha and raspberry pieces.",
+        "benefits": [
+          "boosts brain function",
+          "helps fight inflammation",
+          "helps manage diabetes",
+          "boosts heart health",
+          "prevents cancer"
+        ],
+        "image": "<img src=\"static/Matcha_Berries.png\" >",
+        "rating":2.5 ,
+        "category": "GREEN TEA"
+      }
+    ],
+  
+    "BLACK TEA": [
+      {
+        "id": 7,
+        "name": "BLACK CURRANT SENCHA BLACK TEA",
+        "price": "15.00 $",
+        "description": "An organic exquisite fruity blend of black and green tea originating all the way from Europe to leave you awakened and refreshed.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "black tea, sencha green tea, papaya pieces, currant, sunflower petals, rose petals and mellow blossoms.",
+        "benefits": [
+          "boosts metabolism",
+          "soothes sore throats",
+          "boosts energy",
+          "boosts heart health",
+          "improves digestion"
+        ],
+        "image": "<img src=\"static/BlackCurrentGreen.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      },
+      {
+        "id": 8,
+        "name": "BLUE FLOWER EARL GREY BLACK TEA",
+        "price": "15.00 $",
+        "description": "A rich hand-crafted blend with a slightly citrusy and floral taste. It’s a classic breakfast tea!",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Blue cornflowers, bergamot, earl grey.",
+        "benefits": [
+          "fights anxiety",
+          "fights inflammation",
+          "improves digestion",
+          "improves focus"
+        ],
+        "image": "<img src=\"static/BlueFlower.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      },
+      {
+        "id": 9,
+        "name": "VANILLA CLASSIC BLACK TEA",
+        "price": "15.00 $",
+        "description": "Cherish the world over a simple comforting and soothing brew!",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy. (100 grams makes 65 mugs)",
+        "ingredients": "Vanilla, black tea.",
+        "benefits": [
+          "boosts heart health",
+          "aids weight loss",
+          "revitalizes the energy",
+          "improves focus"
+        ],
+        "image": "<img src=\"static/VANILLA-CLASSIC.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      },
+      {
+        "id": 10,
+        "name": "FINEST GOLDEN TIPS PREMIUM BLACK TEA",
+        "price": "30.00 $",
+        "description": "A rare and memorable tea experience worth savoring! This fine tea is a premium specialty black tea for the connoisseur.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Golden tips",
+        "benefits": [
+          "boosts heart health",
+          "improves focus",
+          "cures ingestion",
+          "reduces the rate of cholesterol"
+        ],
+        "image": "<img src=\"static/Golden.png\">",
+        "rating":2.5 ,
+        "category": "BLACK TEA"
+      }
+    ],
+  
+    "WHITE TEA": [
+      {
+        "id": 11,
+        "name": "SILVER NEEDLE WHITE TEA",
+        "price": "30.00 $",
+        "description": "Discover one of the most exclusive teas around the world! This premium grade classic white tea consists only of the first flush spring buds of the tea plant. It is also known for its delicious sweet flavor.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse for 4 minutes. Remove leaves and enjoy.",
+        "ingredients": "Yin Zhen, also known as 'Silver Needles'.",
+        "benefits": [
+          "balances blood glucose levels",
+          "boosts heart health",
+          "boosts metabolism",
+          "balances level of cholesterol"
+        ],
+        "image": "<img src=\"static/Silver_needle.png\">",
+        "rating":2.5 ,
+        "category": "WHITE TEA"
+      },
+      {
+        "id": 12,
+        "name": "WHITE SILK WHITE TEA",
+        "price": "15.00 $",
+        "description": "A delicate white tea with a special fruity twist that serves as perfect refreshment!",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse them for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "White tea, lemon myrtle, ginger, and raspberries.",
+        "benefits": [
+          "boosts energy",
+          "aids weight loss",
+          "aids in digestion",
+          "reduces inflammation"
+        ],
+        "image": "<img src=\"static/White_Silk.png\">",
+       "rating":2.5 ,
+        "category": "WHITE TEA"
+      },
+      {
+        "id": 13,
+        "name": "WHITE WINGS WHITE TEA",
+        "price": "18.00 $",
+        "description": "Smooth, delicate and highly refreshing, this fine white tea yields a light golden colored cup full of flavors.",
+        "how_to_prepare": "Pour 90°C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "White blossoms, raw buds.",
+        "benefits": [
+          "balances blood glucose levels",
+          "boosts heart health",
+          "boosts metabolism",
+          "balances level of cholesterol"
+        ],
+        "image": "<img src=\"static/White_Wing.png\">",
+        "rating":2.5 ,
+        "category": "WHITE TEA"
+      }
+    ],
+  
+    "FRUIT BLENDS": [
+      {
+        "id": 14,
+        "name": "MIXED BERRIES FRUIT BLEND",
+        "price": "15.00 $",
+        "description": "An intensely fruity blend that will revitalize your spirits from the first sip to the last. Sweet, tangy and energizing, with a lovely sunny aroma, it’s the perfect caffeine-free infusion.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Apple pieces, hibiscus petals, elderberries, sweet blackberry leaves, rosehip shells, strawberry slices, blackberries, raspberries and blueberries.",
+        "benefits": [
+          "helps fight inflammation",
+          "helps manage diabetes",
+          "boosts heart health",
+          "prevents cancer",
+          "boosts antioxidant levels"
+        ],
+        "image": "<img src=\"static/mixed-berries.png\">",
+        "rating":2.5 ,
+        "category": "FRUIT BLENDS"
+      }
+    ],
+  
+    "MATCHA BLENDS": [
+      {
+        "id": 15,
+        "name": "ORGANIC MATCHA PREMIUM JAPANESE GREEN TEA",
+        "price": "38.00 $",
+        "description": "Japanese matcha, Ceremonial Grade, Certified organic by Lacon GmbH. Matcha is the most exclusive tea in the world. Matcha is finely ground powder of green tea leaves that have been shaded for a considerable period of time before harvest. The tea is made solely of the rare and high-class tencha tea leaves.",
+        "how_to_prepare": "Pour 80°C water over 2 grams of tea leaves powder per cup and stir to dissolve. Enjoy!",
+        "ingredients": "Matcha",
+        "benefits": ["Matcha has high amounts of antioxidants, amino acids, minerals, and countless micronutrients, that interact with free radicals and thereby show positive effects on the body and the skin.",
+        " It’s cognitive power lies in good natural source of antioxidant",
+        "Matcha is rich with Vitamin A as well as L-Theanine, which in combination with caffeine, promotes focused alertness.",
+        " Calm energy concentration that lasts much longer than with coffee."],
+        "image": "<img src=\"static/MATCHA.png\" >",
+        "rating":2.5 ,
+        "category": "MATCHA BLENDS"
+      },
+      {
+        "id": 16,
+        "name": "TURMERIC MATCHA",
+        "price": "15.00 $",
+        "description": "Whether you’re trying to lose weight or just enjoy the naturally wholesome flavors, allow this tea to become the cherry on top for your healthy journey.",
+        "how_to_prepare": "Pour 100 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Matcha, turmeric, ginger, lemongrass, liquorice roots, orange peel and lemon peel.",
+        "benefits": [
+          "boosts energy level",
+          "detoxifies the body",
+          "aids in weight loss",
+          "boosts immunity",
+          "prevents arthritis and rheumatism",
+          "boosts brain function"
+        ],
+        "image": "<img src=\"static/Turmeric_Matcha.png\" >",
+        "rating":2.5 ,
+        "category": "MATCHA BLENDS"
+      }
+    ],
+  
+    "HERBAL TEA": [
+      {
+        "id": 17,
+        "name": "BALANCE HERBAL INFUSION",
+        "price": "15.00 $",
+        "description": "Exuding finesse and delightful flavors, this mellow blend adds depth and richness to your days.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Fennel, hibiscus, lavender, lemongrass, aniseeds.",
+        "benefits": [
+          "treats bloating",
+          "improves digestion",
+          "reduces blood pressure",
+          "improves sleep quality",
+          "balances levels cholesterol in the blood",
+          "detoxifies the body"
+        ],
+        "image": "<img src=\"static/HerbalBalance.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      },
+      {
+        "id": 18,
+        "name": "ESCAPE TO NATURE HERBAL INFUSION",
+        "price": "15.00 $",
+        "description": "An intensely aromatic herbal blend will spark up your taste buds and take you on a bold journey.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Juniper berries, fennel, lemon verbena, nettle leaves, rosemary, basil, heather blossoms, lavender, sandal wood, sunflower petals.",
+        "benefits": [
+          "fights water retention",
+          "boosts metabolism",
+          "soothes urinary tract infections",
+          "flushes out toxins",
+          "boosts immune system",
+          "improves digestion"
+        ],
+        "image": "<img src=\"static/Escape.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      },
+      {
+        "id": 19,
+        "name": "SIMPLY TEA TOX HERBAL INFUSION",
+        "price": "12.00 $",
+        "description": "Enjoy this luxurious rejuvenating detox herbal infusion sourced from the heart of Europe.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Rosemary, nettle leaves, rosehip shells, rooibos, lavender, ginger, mate, puerh tea, fennel, liquorice roots, cinnamon, black pepper, cardamom pods, clove buds.",
+        "benefits": [
+          "protects the brain from aging",
+          "boosts metabolic rate",
+          "prevents fat accumulation",
+          "detoxifies the body"
+        ],
+        "image": "<img src=\"static/Simply_1.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      },
+      {
+        "id": 20,
+        "name": "WELL BEING HERBAL INFUSION",
+        "price": "15.00 $",
+        "description": "A caffeine-free wellness blend that will revive your senses and soothe your body.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse them for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "lemon verbena, aniseed, fennel, sweet orange peel, liquorice roots, peppermint, spearmint, and chamomile.",
+        "benefits": [
+          "treats bloating",
+          "regulates appetite",
+          "reduces cholesterol levels",
+          "alleviates cramps",
+          "reduces nausea"
+        ],
+        "image": "<img src=\"static/Wellbeing.png\" >",
+        "rating":2.5 ,
+        "category": "HERBAL TEA"
+      }
+    ],
+  
+  
+    "ROOIBOS & HONEY BUSH": [
+      {
+        "id": 21,
+        "name": "HONEY BUSH",
+        "price": "15.00 $",
+        "description": "Treat yourself to a true taste of the pure honey bush from the southeastern part of South Africa! It is delicately harvested to bring you a fine fruity and honey cup of tea.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Honey bush",
+        "benefits": [
+          "strengthens immunity",
+          "accelerates metabolism",
+          "relaxes the body",
+          "helps treat menopause symptoms"
+        ],
+        "image": "<img src=\"static/HoneyBush.png\" >",
+        "rating":2.5 ,
+        "category": "ROOIBOS & HONEY BUSH"
+      },
+      {
+        "id": 22,
+        "name": "ROOIBOS BLOSSOM",
+        "price": "15.00 $",
+        "description": "We’ve created the perfect partnership of soothing South African rooibos and florals. It’s a wonderfully warming infusion that helps you to both relax and rejuvenate.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Rooibos, sunflower petals, cornflower petals, rose petals.",
+        "benefits": [
+          "boosts antioxidant levels",
+          "improves blood circulation",
+          "supports healthy skin",
+          "aids in weight loss",
+          "rich in magnesium and iron"
+        ],
+        "image": "<img src=\"static/Blossom.png\" >",
+        "rating":2.5 ,
+        "category": "ROOIBOS & HONEY BUSH"
+      },
+      {
+        "id": 23,
+        "name": "SPICY ROOIBOS",
+        "price": "15.00 $",
+        "description": "A bold and satisfying brew perfect for adding some spice to your life! It’s a blend full of character in every cup.",
+        "how_to_prepare": "Pour 100°C water over 1.5 grams of tea leaves per cup and infuse for 5 minutes. Remove leaves and enjoy.",
+        "ingredients": "Rooibos, cinnamon, pink pepper, bourbon vanilla beans, clove buds and cardamom.",
+        "benefits": [
+          "boosts antioxidant levels",
+          "balances blood glucose levels",
+          "supports healthy skin",
+          "aids in weight loss",
+          "aids in digestion",
+          "rich in magnesium and iron"
+        ],
+        "image": "<img src=\"static/SpicyRooibois.png\" >",
+        "rating":2.5 ,
+        "category": "ROOIBOS & HONEY BUSH"
+      }
+    ],
+  
+    "PREMIUM OOLONG": [
+      {
+        "id": 24,
+        "name": "ROYAL ORCHID PREMIUM OOLONG TEA",
+        "price": "30.00 $",
+        "description": "Anyone who enjoys a sophisticated cup of tea will appreciate the finesse of our Royal Orchid tea.",
+        "how_to_prepare": "Pour 90 °C water over 1.5 grams of tea leaves per cup and infuse for 3 minutes. Remove leaves and enjoy.",
+        "ingredients": "Premium Oolong Tea",
+        "benefits": [
+          "improves focus",
+          "cleanses the body",
+          "increases fat oxidation",
+          "boosts heart health",
+          "helps manage stress"
+        ],
+        "image": "<img src=\"static/Royal_Orchid.png\" >",
+        "rating":2.5 ,
+        "category": "PREMIUM OOLONG"
+      }
+    ]
+  
+  }
+
+  <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Category</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="category_view.css">
+        <link rel="stylesheet" href="shop.css">
+        <link rel="icon" type="image/png" href="static/tea8.png">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-container">
+                        <div class="logo-box">
+                            <div class="logo"></div>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <!-- <li class="nav-links">
+                        <a href="cart.html">Cart</a>
+                    </li> -->
+                    <li class="search-container">
+                        <input type="search" autofocus aria-label="Search" class="search-input"  placeholder="Search Your Product...">
+                    </li>
+                    <li class="right-nav">
+                        <a href="cart.html">
+                            <div class="cart-box">
+                                <div class="cart"></div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="profile-box">
+                                <div class="profile-pic"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 id="category-title">Search Result</h1>
+        <div class="shop-options">
+            <button class="search-button shop-option-button">SEARCH</button>
+            <button id="allButton" class="shop-option-button" style="padding: 12px;">ALL</button>
+            <button class="green-tea shop-option-button">GREEN TEA</button>
+            <button class="white-tea shop-option-button">WHITE TEA</button>
+            <button class="black-tea shop-option-button">BLACK TEA</button>
+            <button class="herbal-tea shop-option-button">HERBAL TEA</button>
+            <button class="matcha-tea shop-option-button">MATCHA BLENDS</button>
+            <button class="roobios-tea shop-option-button">ROOBIOS & HONEY BUSH</button>
+            <button class="fruit-tea shop-option-button">FRUIT BLENDS</button>
+            <button class="premium-tea shop-option-button">PREMIUM OOLANG</button>
+        </div>
+        <div class="product-grid" id="content"></div>
+
+        <footer class="footer">
+            <div class="container1">
+                <div class="socail">
+                    <ul class="social-icons">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Refunds & Replacement</a></li>
+                        <li><a href="#">About Tea House </a></li>
+                    </ul>
+                </div>
+                <div class="more-info">
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>First Branch Location</li>
+                        <li><i class="fa fa-map-marker"></i>Second Branch Location</li>
+                        <li><i class="fa fa-phone"></i> 00961 78 957416</li>
+                        <li><i class="fa fa-envelope"></i> alishokermana@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul>
+                        <li>Shipping All Over Lebanon</li>
+                        <li>Delivery within two working days.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright Tea & Tonic | by Ali Shokor</p>
+            </div>
+    
+        </footer>
+
+        <script>
+            
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const buttons = document.querySelectorAll('.shop-option-button');
+                const searchButton = document.querySelector('search-button')
+                const allButton = document.getElementById('allButton');
+                const greenTea = document.querySelector('.green-tea');
+                const whiteTea = document.querySelector('.white-tea');
+                const blackTea = document.querySelector('.black-tea');
+                const herbalTea = document.querySelector('.herbal-tea');
+                const matchaTea = document.querySelector('.matcha-tea');
+                const roobiosTea = document.querySelector('.roobios-tea');
+                const fruitTea = document.querySelector('.fruit-tea');
+                const premiumTea = document.querySelector('.premium-tea');
+
+                const contentDiv = document.getElementById('content');
+            
+                
+                // Set "ALL" button as focused by default
+                allButton.classList.add('selected');
+            
+                buttons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        buttons.forEach(btn => {
+                            btn.classList.remove('selected');
+                        });
+                        button.classList.add('selected');
+                    });
+                });
+            
+                const sampleData = {
+                    greentea: [
+                        { id: 1, name: "Cinnamon Orange Green tea", price: 15, image: "static/CinnamonOrange.png" },
+                        { id: 2, name: "Turmeric Matcha", price: 15, image: "static/Turmeric_Matcha.png" },
+                        { id: 3, name: "Earl Grey Green Tea", price: 15, image: "static/EarlGreyGreen.png" },
+                        { id: 4, name: "Ginger Pineapple Green Tea", price: 15, image: "static/GingerPineApple.png" },
+                        { id: 5, name: "Vitalitea'l Green Tea", price: 15, image: "static/Vitality.png" },
+                        { id: 6, name: "Matcha Berries", price: 15, image: "static/Matcha_Berries.png" },
+                    ],
+                    blacktea: [
+                        { id: 7, name: "BLACK CURRANT SENCHA BLACK TEA", price: 15, image: "static/BlackCurrentGreen.png" },
+                        { id: 8, name: "BLUE FLOWER EARL GREY BLACK TEA", price: 15, image: "static/BlueFlower.png" },
+                        { id: 9, name: "VANILLA CLASSIC BLACK TEA", price: 15, image: "static/VANILLA-CLASSIC.png" },
+                        { id: 10, name: "FINEST GOLDEN TIPS PREMIUM BLACK TEA", price: 30, image: "static/Golden.png" },
+                    ],
+                    whitetea: [
+                        { id: 11, name: "SILVER NEEDLE WHITE TEA", price: 30, image: "static/Silver_needle.png" },
+                        { id: 12, name: "WHITE SILK WHITE TEA", price: 15, image: "static/White_Silk.png" },
+                        { id: 13, name: "WHITE WINGS WHITE TEA", price: 18, image: "static/White_Wing.png" },
+                    ],
+                    herbaltea: [
+                        { id: 14, name: "BALANCE HERBAL INFUSION", price: 15, image: "static/HerbalBalance.png" },
+                        { id: 15, name: "ESCAPE TO NATURE HERBAL INFUSION", price: 15, image: "static/Escape.png" },
+                        { id: 16, name: "SIMPLY TEA TOX HERBAL INFUSION", price: 12, image: "static/Simply_1.png" },
+                        { id: 17, name: "WELL BEING HERBAL INFUSION", price: 15, image: "static/Wellbeing.png" },
+                    ],
+                    matchablends: [
+                        { id: 18, name: "ORGANIC MATCHA PREMIUM JAPANESE GREEN TEA", price: 38, image: "static/MATCHA.png" },
+                        { id: 19, name: "TURMERIC MATCHA", price: 15, image: "static/Turmeric_Matcha.png" },
+                    ],
+                    rooiboshoneybush: [
+                        { id: 20, name: "HONEY BUSH", price: 15, image: "static/HoneyBush.png" },
+                        { id: 21, name: "ROOIBOS BLOSSOM", price: 15, image: "static/Blossom.png" },
+                        { id: 22, name: "SPICY ROOIBOS", price: 15, image: "static/SpicyRooibois.png" },
+                    ],
+                    fruitblends: [
+                        { id: 23, name: "MIXED BERRIES FRUIT BLEND", price: 15, image: "static/mixed-berries.png" },
+                    ],
+                    premiumoolong: [
+                        { id: 24, name: "ROYAL ORCHID PREMIUM OOLONG TEA", price: 30, image: "static/Royal_Orchid.png" },
+                    ]
+                };
+            
+                // Function to display items based on the category
+                const displayItems = (category) => {
+                    
+                    sampleData[category].forEach(item => {
+                        const card = document.createElement('div');
+                        card.className = 'product-card';
+            
+                        const img = document.createElement('img');
+                        img.src = item.image;
+                        img.classList.add('tea-image');
+            
+                        img.addEventListener('click', () => {
+                            fetch('./teatypes.JSON')
+                                .then(response => response.json())
+                                .then(sampleData2 => {
+                                    for (const category2 in sampleData2) {
+                                        sampleData2[category2].forEach(item2 => {
+                                            if (item2.name.toLowerCase() === item.name.toLowerCase()) {
+                                                localStorage.setItem('selectedTea', JSON.stringify(item2));
+                                                window.location.href = 'item_view.html';
+                                            }
+                                        });
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error("Error fetching JSON data:", error);
+                                });
+                        });
+            
+                        const title = document.createElement('h3');
+                        title.textContent = item.name;
+            
+                        const price = document.createElement('p');
+                        price.textContent = `$${item.price}`;
+            
+                        const button = document.createElement('button');
+                        button.className = 'btn btn-primary';
+                        button.textContent = 'Buy Now';
+                        button.addEventListener('click', () => {
+                            fetch('./teatypes.JSON')
+                                .then(response => response.json())
+                                .then(sampleData2 => {
+                                    for (const category2 in sampleData2) {
+                                        sampleData2[category2].forEach(item2 => {
+                                            if (item2.name.toLowerCase() === item.name.toLowerCase()) {
+                                                localStorage.setItem('selectedTea', JSON.stringify(item2));
+                                                window.location.href = 'item_view.html';
+                                            }
+                                        });
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error("Error fetching JSON data:", error);
+                                });
+                        });
+            
+                        card.appendChild(img);
+                        card.appendChild(title);
+                        card.appendChild(price);
+                        card.appendChild(button);
+                        contentDiv.appendChild(card);
+                    });
+                };
+            
+                allButton.addEventListener('click', () => {
+                    contentDiv.innerHTML = '';
+                    for (const category in sampleData) {
+                        displayItems(category);
+                    }
+                });
+                allButton.click();
+
+                // Handle individual category buttons
+                greenTea.addEventListener('click', () => {
+                    console.log('Green Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('greentea');
+                });
+            
+                whiteTea.addEventListener('click', () => {
+                    console.log('White Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('whitetea');
+                });
+            
+                blackTea.addEventListener('click', () => {
+                    console.log('Black Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('blacktea');
+                });
+            
+                herbalTea.addEventListener('click', () => {
+                    console.log('Herbal Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('herbaltea');
+                });
+            
+                matchaTea.addEventListener('click', () => {
+                    console.log('Matcha Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('matchablends');
+                });
+            
+                roobiosTea.addEventListener('click', () => {
+                    console.log('Roobios Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('rooiboshoneybush');
+                });
+            
+                fruitTea.addEventListener('click', () => {
+                    console.log('Fruit Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('fruitblends');
+                });
+            
+                premiumTea.addEventListener('click', () => {
+                    console.log('Premium Tea Button Clicked');
+                    contentDiv.innerHTML = '';
+                    displayItems('premiumoolong');
+                });
+
+                const searchInput = document.querySelector('.search-input');
+
+                searchInput.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault(); // Prevent the default form submission
+                        const query = searchInput.value.trim();
+                        if (query) {
+                            // Redirect to shop.html with the search query as a parameter
+                            window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+                        }
+                    }
+                });
+
+                //getting inside the search text
+                 
+                const urlParams = new URLSearchParams(window.location.search);
+                const search = urlParams.get('search');
+                if (search) {
+                    contentDiv.innerHTML = ''; // Clear previous content
+            
+                    // Update button classes
+                    if (searchButton) {
+                        searchButton.classList.add('selected'); // Assuming the search button has an id of 'searchButton'
+                    }
+                    allButton.classList.remove('selected');
+            
+                    // Iterate over the categories in sampleData
+                    for (const category in sampleData) {
+                        // Iterate over the items in each category
+                        sampleData[category].forEach((item) => {
+                            // Check if the item's name includes the search term
+                            if (item.name.toUpperCase().includes(search.toUpperCase())) {
+                                const card = document.createElement('div');
+                                card.className = 'product-card';
+            
+                                const img = document.createElement('img');
+                                img.src = item.image;
+                                img.classList.add('tea-image');
+            
+                                img.addEventListener('click', () => {
+                                    fetch('./teatypes.JSON')
+                                        .then(response => response.json())
+                                        .then(sampleData2 => {
+                                            for (const category2 in sampleData2) {
+                                                sampleData2[category2].forEach(item2 => {
+                                                    if (item2.name.toLowerCase() === item.name.toLowerCase()) {
+                                                        localStorage.setItem('selectedTea', JSON.stringify(item2));
+                                                        window.location.href = 'item_view.html';
+                                                    }
+                                                });
+                                            }
+                                        })
+                                        .catch(error => {
+                                            console.error("Error fetching JSON data:", error);
+                                        });
+                                });
+            
+                                const title = document.createElement('h3');
+                                title.textContent = item.name;
+            
+                                const price = document.createElement('p');
+                                price.textContent = `$${item.price}`;
+            
+                                const button = document.createElement('button');
+                                button.className = 'btn btn-primary';
+                                button.textContent = 'Buy Now';
+                                button.addEventListener('click', () => {
+                                    fetch('./teatypes.JSON')
+                                        .then(response => response.json())
+                                        .then(sampleData2 => {
+                                            for (const category2 in sampleData2) {
+                                                sampleData2[category2].forEach(item2 => {
+                                                    if (item2.name.toLowerCase() === item.name.toLowerCase()) {
+                                                        localStorage.setItem('selectedTea', JSON.stringify(item2));
+                                                        window.location.href = 'item_view.html';
+                                                    }
+                                                });
+                                            }
+                                        })
+                                        .catch(error => {
+                                            console.error("Error fetching JSON data:", error);
+                                        });
+                                });
+            
+                                card.appendChild(img);
+                                card.appendChild(title);
+                                card.appendChild(price);
+                                card.appendChild(button);
+                                contentDiv.appendChild(card);
+                            }
+                        });
+                    }
+                }
+
+            });
+            
+        </script>
+
+
+    </body>
+</html> 

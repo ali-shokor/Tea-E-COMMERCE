@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cart</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="category_view.css">
+        <link rel="stylesheet" href="shop.css">
+        <link rel="stylesheet" href="cart.css">
+        <link rel="icon" type="image/png" href="static/tea8.png">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-container">
+                        <div class="logo-box">
+                            <div class="logo"></div>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <!-- <li class="nav-links">
+                        <a href="cart.html">Cart</a>
+                    </li> -->
+                    <li class="search-container">
+                        <input type="search" autofocus aria-label="Search" class="search-input"  placeholder="Search Your Product...">
+                    </li>
+                    <li class="right-nav">
+                        <a href="cart.html">
+                            <div class="cart-box">
+                                <div class="cart"></div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="profile-box">
+                                <div class="profile-pic"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="cart-container-box">
+            <h1 class="your-cart">Your Cart</h1>
+            <div class="cart-container">
+
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input class="display-number" min="1" max="10" value="1" type="text">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+                
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input class="display-number" min="1" max="10" value="1" type="text">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+                
+            
+            
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input min="1" max="10" value="1" type="text" name="" class="display-number">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+
+
+                <div class="product-cart-display">
+                    <div class="image-container">
+                        <img src="./static/EarlGreyGreen.png" alt="test">
+                    </div>
+                    <p class="price-cart">Price: <i class="price-number">15</i>$</p>
+                    <div class="quantity-user-cart">
+                        <button class="minus">-</button>
+                        <input class="display-number" min="1" max="10" value="1" type="text">
+                        <button class="add">+</button>
+                    </div>
+                    <div class="remove-cart">
+                        <button class="remove-cart-button">Remove</button>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="clear-cart-box">
+                <button class="clear-cart-button">Clear Cart</button>
+            </div>
+
+            <div class="order-summary">
+                <h2>ORDER SUMMARY: </h2>
+                <h3 class="items-salary">SUB TOTAL: 15$</h3>
+                <h3>DELIVERY: 5$</h3>
+                <h3 class="total">TOTAL: 20$</h3>
+                <button id="proceed" class="proceed-button">Proceed</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container1">
+                <div class="socail">
+                    <ul class="social-icons">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Refunds & Replacement</a></li>
+                        <li><a href="#">About Tea House </a></li>
+                    </ul>
+                </div>
+                <div class="more-info">
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>First Branch Location</li>
+                        <li><i class="fa fa-map-marker"></i>Second Branch Location</li>
+                        <li><i class="fa fa-phone"></i> 00961 78 957416</li>
+                        <li><i class="fa fa-envelope"></i> alishokermana@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul>
+                        <li>Shipping All Over Lebanon</li>
+                        <li>Delivery within two working days.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright Tea & Tonic | by Ali Shokor</p>
+            </div>
+    
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const searchInput = document.querySelector('.search-input');
+            
+                searchInput.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault(); // Prevent the default form submission
+                        const query = searchInput.value.trim();
+                        if (query) {
+                            // Redirect to shop.html with the search query as a parameter
+                            window.location.href = `shop.html?search=${encodeURIComponent(query)}`;
+                        }
+                    }
+                });
+            
+                const cartContainer = document.querySelector('.cart-container');
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const delivery = 5;
+            
+                // Function to create a cart item element
+                function createCartItem(cartItem) {
+                    return `
+                        <div class="product-cart-display">
+                            <div class="image-container">
+                                ${cartItem.image}
+                            </div>
+                            <p class="price-cart">Price: <i class="price-number">${cartItem.price}</i></p>
+                            <div class="quantity-user-cart">
+                                <div class="display-number">
+                                    Quantity: ${cartItem.quantity}
+                                </div>
+                            </div>
+                            <div class="remove-cart">
+                                <button class="remove-cart-button">Remove</button>
+                            </div>
+                        </div>
+                    `;
+                }
+            
+                // Populate cart container with items
+                function renderCart() {
+                    cartContainer.innerHTML = cart.map(createCartItem).join('');
+                    attachEventListeners(); // Attach event listeners after rendering
+                }
+            
+                // Function to update the total and subtotal
+                function updateTotals() {
+                    let total = 0;
+                    cart.forEach(item => {
+                        total += parseFloat(item.price) * parseInt(item.quantity, 10); // Multiply price by quantity
+                    });
+                    const itemsSalary = document.querySelector('.items-salary');
+                    const totalText = document.querySelector('.total');
+                    itemsSalary.textContent = `SUB TOTAL: ${total}$`;
+                    totalText.textContent = `TOTAL: ${total + delivery}$`;
+                }
+            
+                // Function to update item quantity in the cart and recalculate totals
+                function updateItemQuantity(cartItemElement) {
+                    const imageUrl = cartItemElement.querySelector('img').src;
+                    const itemIndex = cart.findIndex(item => item.image === imageUrl);
+                    if (itemIndex !== -1) {
+                        const quantityInput = cartItemElement.querySelector('.display-number');
+                        cart[itemIndex].quantity = quantityInput.value;
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        updateTotals();
+                    }
+                }
+            
+                // Function to attach event listeners
+                function attachEventListeners() {
+                    const allCart = document.querySelectorAll('.product-cart-display');
+            
+                    allCart.forEach(cartItemElement => {
+                        const quantityContainer = cartItemElement.querySelector('.quantity-user-cart');
+                        const minusButton = quantityContainer.querySelector('.minus');
+                        const plusButton = quantityContainer.querySelector('.add');
+                        const quantityInput = quantityContainer.querySelector('.display-number');
+            
+                        minusButton?.addEventListener('click', () => {
+                            let currentValue = parseInt(quantityInput.value, 10);
+                            if (currentValue > parseInt(quantityInput.min, 10)) {
+                                quantityInput.value = currentValue - 1;
+                                updateItemQuantity(cartItemElement);
+                            }
+                        });
+            
+                        plusButton?.addEventListener('click', () => {
+                            let currentValue = parseInt(quantityInput.value, 10);
+                            if (currentValue < parseInt(quantityInput.max, 10)) {
+                                quantityInput.value = currentValue + 1;
+                                updateItemQuantity(cartItemElement);
+                            }
+                        });
+            
+                        quantityInput?.addEventListener('input', () => {
+                            let value = parseInt(quantityInput.value, 10);
+                            if (value < parseInt(quantityInput.min, 10)) {
+                                quantityInput.value = quantityInput.min;
+                            } else if (value > parseInt(quantityInput.max, 10)) {
+                                quantityInput.value = quantityInput.max;
+                            }
+                            updateItemQuantity(cartItemElement);
+                        });
+            
+                        const removeButton = cartItemElement.querySelector('.remove-cart-button');
+                        removeButton.addEventListener('click', () => {
+                            const imageUrl = cartItemElement.querySelector('img')?.src;
+                            const itemIndex = cart.findIndex(item => item.image === imageUrl);
+                            if (itemIndex !== -1) {
+                                cart.splice(itemIndex, 1);
+                                localStorage.setItem('cart', JSON.stringify(cart));
+                                renderCart(); // Re-render the cart after removal
+                                updateTotals(); // Update totals after removal
+                            }
+                        });
+                    });
+                }
+            
+                // Initial render and total calculation
+                renderCart();
+                updateTotals();
+
+                //remove all items
+                const removeAllButton = document.querySelector('.clear-cart-button')
+                removeAllButton.addEventListener('click', () => {
+                    cartContainer.innerHTML = '';
+                    localStorage.removeItem('cart');
+                    cart.length = 0; // Clear the cart array
+            
+                    // Show empty cart message
+                    cartContainer.innerHTML = '<h2>Your cart is empty</h2>';
+                    updateTotals(); // Clear totals
+                });
+
+                // Remove all items from cart
+                const allCart = document.querySelectorAll('.product-cart-display');
+                allCart.forEach((item, index) => {
+                    const removeButton = item.querySelector('.remove-cart-button');
+                    removeButton.addEventListener('click', () => {
+                        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                
+                        // Remove the item from the cart array using the index
+                        cart.splice(index, 1);
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        updateTotals(); 
+                        window.location.reload()
+                        item.remove();
+                        
+                    });
+                });
+            
+                // Proceed to checkout
+                const proceed = document.getElementById('proceed');
+                proceed.addEventListener('click', () => {
+                    window.location.href = `checkout.html?price=${encodeURIComponent(document.querySelector('.total').textContent)}`;
+                });
+            });
+            
+            
+        </script>        
+        
+        
+    </body>
+    
+
+</html>

@@ -1,0 +1,124 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background-color:#ffffffec; 
+}
+
+.container2 form{
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0,0,0.3);
+    border-radius: 10px;
+}
+
+.title {
+    color:#8aa387;
+    margin-bottom: 20px;
+    margin-top:20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    color: rgb(30, 29,29);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    margin-bottom: 20px;
+}
+
+.col1, .col2 {
+    width: 100% ;
+}
+
+.inputBox {
+    width: 100%;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding:10px;
+    margin: 5px 0;
+    border:3px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background: #6a863b;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #8aa387;
+}
+
+#amount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6a863b;
+    text-align: right;
+}
+
+.methods{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px; 
+    padding: 10px;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffffec;
+    margin: 0 8px 9px 0px; 
+    padding-left: 20px; 
+    box-sizing: border-box; 
+}
+
+.method{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 5px; 
+}
+
+.method img {
+    height: 60px; 
+    width: auto;
+    margin-bottom: 5px; 
+    margin:8px;
+}
+
+.method label {
+    font-size: 14px; 
+    margin-bottom: 5px;
+}
+
+.method input[type="radio"] {
+    margin-top: 5px;
+}
